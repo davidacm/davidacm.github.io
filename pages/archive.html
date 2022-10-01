@@ -1,0 +1,20 @@
+---
+layout: page
+title: Archivo del Blog
+---
+
+<a href="/archive-date.html">Ordenado por fecha</a>
+
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+
+{% for tag in site.categories %}
+{% if tag[0] == "posts" %}
+{% continue %}
+{%endif%}
+  <h2>{{- tag[0] -}}</h2>
+  <ul class="post-list" role="presentation">
+    {%- for post in tag[1] %}
+      {% include postItem.html post = post %}
+    {%- endfor %}
+  </ul>
+{%- endfor %}

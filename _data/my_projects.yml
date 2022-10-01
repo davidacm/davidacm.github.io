@@ -1,0 +1,58 @@
+- name: Controlador IBMTTS para NVDA
+  link: https://github.com/davidacm/NVDA-IBMTTS-Driver
+  description: El famoso controlador de IBMTTS para NVDA, que es compatible con sintetizadores de IBM y Eloquence. Descarga siempre la versión más actualizada desde gitHub.
+- name: Beep Keyboard para NVDA
+  link: https://github.com/davidacm/beepKeyboard
+  description: |
+    Complemento para hacer que NVDA emita beeps tras ciertos eventos del teclado como los siguientes:
+
+    * Beep para mayúsculas cuando el bloqueo de mayúsculas está activado: si esta característica está habilitada, NVDA emitirá un pitido cuando escribas letras mayúsculas y el bloqueo de mayúsculas esté activado. ¡No cometas más errores al no darte cuenta que estás escribiendo en mayúsculas!
+    * Pitido para caracteres escritos cuando se presiona shift: con esta función, NVDA emitirá un pitido si escribes un carácter con la tecla shift presionada. Útil para cuando no queremos depender de la voz de NVDA pero queremos asegurarnos que cada símbolo con shift fue correctamente escrito.
+    * Pitido para cambios de teclas interruptor: con esta función, NVDA emitirá un pitido más alto si se activa una tecla interruptor como el bloqueo de mayúsculas, y un tono más bajo si se desactiva. También funciona para el bloqueo numérico, ETC. Ya no se te activarán las mayúsculas sin que no te des cuenta.
+    * Pitido para caracteres específicos: NVDA emitirá un pitido para todos los caracteres que configures en la configuración avanzada. ¿Tu teclado está emitiendo letras aleatorias? Ajusta los caracteres deseados y date cuenta cuando tu teclado afectado pudiera dañar tu texto escrito.
+
+- name: Enhanced Phonetic Reading para NVDA
+  link: https://github.com/davidacm/EnhancedPhoneticReading/
+  description: Has que NVDA lea una descripción del carácter al mover el cursor por caracteres, tras una pausa de no mover el cursor. Dicha pausa es precisa y configurable en milisegundos. También, puedes hacer que NVDA lea la descripción fonética en vez de la letra, característica útil si usas un sintetizador que suele pronunciar muchas letras iguales.
+- name: power Status Tones para NVDA
+  link: https://github.com/davidacm/powerStatusTones
+  description: Has que NVDA te avise mediante un beep alto si tu computadora se conectó a la electricidad, o un beep bajo si fue desconectada.
+- name: synth Ring Settings Selector para NVDA
+  link: https://github.com/davidacm/synthRingSettingsSelector
+  description: "¿Te resulta tedioso seleccionar entre todas las opciones de configuración rápida del anillo de configuración de NVDA? ¡Pon solo las que tu quieras con este complemento! Personalmente, solo me he quedado con tres: Idioma, velocidad y volumen."
+- name: Enhanced Tones para NVDA.
+  link: https://github.com/davidacm/EnhancedPhoneticReading
+  description: "Nació como un experimento personal para resolver problemas de latencia con tarjetas de sonido. Ahora, es un generador de ondas, actualmente soporta 2 tipos de onda: La cuadrática y la Sinusoide. Si no sabes que es, solo escucha la diferencia y compruébalo tu mismo. La onda generada es más estable y rápida que el generador de tonos original de NVDA. Los sonidos entre transiciones de tono también son más suaves que el generador original. Personalmente, me gusta más la onda Sinusoide."
+- name: note Manager para NVDA
+  link: https://github.com/davidacm/NoteManagerAddon
+  description: ¡Guarda tus notas rápidas y accede a ellas al instante! Busca, Crea, edita, copia, todo con rapidez. Una vez que te aprendas las teclas rápidas y el flujo de la interfaz, a la que puedes llamar en cualquier momento, serás lo único que uses para realizar tus apuntes y acceder a ellos. Desde comandos de consola, respuestas genéricas, enlaces... Yo pongo el complemento, el límite lo pone tu creatividad. ¡Úsalo como quieras!
+- name: Speech History Explorer para NVDA.
+  link: https://github.com/davidacm/SpeechHistoryExplorer
+  description: Que torta ¿recuerdas que NVDA dijo algo pero no sabes qué? Tal vez recuerdas solo un fragmento... Este complemento registra las últimas 500 frases pronunciadas por NVDA (puedes aumentar el límite si quieres) luego puedes navegar entre las frases con teclas rápidas. Pero además, puedes abrir una interfaz en la que puedes buscar entre las frases pronunciadas por palabras, seleccionar, copiar, repasar letra a letra si quisieras. ¡Que tu imaginación no te engañe nunca más! Si oíste ese mensaje en una notificación pero no estás seguro y ya fue borrado, con este complemento lo confirmas.
+- name: Pico TTS para NVDA
+  link: https://github.com/davidacm/PicoTTS-NVDA
+  description: El sintetizador de voz Pico para NVDA. Personalmente no me agrada mucho, me pidieron darle mantenimiento y este es el resultado. Por si lo extrañas, aquí lo tienes.
+- name: NVDA Development Utilities
+  link: https://github.com/davidacm/NVDADevelopmentUtilities
+  description: Conjunto de utilidades que he ido creando para desarrollar complementos para NVDA. El administrador de configuraciones que utiliza todo el poder de los decoradores de Python ¡Está genial! Te facilitará millones la administración de la configuración de tu complemento.
+- name: Easy Note Reader
+  link: https://davidacm.github.io/enr/
+  description: ¿Quisieras una aplicación que te permita ir a la nota siguiente o anterior sin temor de que se te mueva el foco y te pierdas de donde estabas? ¿Quisieras que fuese lo más fácil e intuitivo posible, sin tener que buscar ni presionar botones, quisieras usar tan solo gestos en la pantalla? Has encontrado lo que buscas. Útil al realizar presentaciones en vivo, donde necesitas una guía para saber qué temática decir. ¡Incluso podrías cantar Karaoke o leer un libro en tiempo real con ella! Yo lo he hecho, previo cargado de la letra en la aplicación.
+- name: moviDescGenerator
+  link: https://davidacm.github.io/moviDescGenerator/
+  description: Esta aplicación te permite transcribir lo que escuchas en tiempo real y sincronizar el texto con el audio o el vídeo. ¡Una vez que conoces el flujo de trabajo, se vuelve sumamente fácil transcribir cualquier cosa! Exporta lo que transcribiste en formato webVTT. También puedes hacer que te lea lo que escribiste, sincronizado con el archivo multimedia que hayas cargado, para que puedas probar que todo está bien. Esta aplicación nació como parte de un proyecto más grande que todavía no ha sido realizado. El objetivo es realizar audiodescripciones textuales de las películas y series, con facilidad. Pero tu dale la utilidad que te parezca más adecuada.
+- name: whatLink
+  link: https://davidacm.github.io/whatLink/
+  description: ¡Envía mensajes directos a Whatsapp! A pesar de ser diría que mi desarrollo más rápido (menos de 20 minutos hasta el deploy) es una aplicación muy útil me han dicho muchos usuarios. Instálala como una PWA en tu teléfono, ponla de acceso fácil, y ábrela cada vez que debas enviar un mensaje a algún número donde no tengas el contacto agregado. Simplemente pega el número en el cuadro de edición (no importa si lleva espacios, letras o guiones) y dale en abrir. Se te mostrará el número al que le escribirás el mensaje. Puede que debas ajustar el código de país, pero conserva el último código de país establecido.
+- name: Accessible remote board
+  link: https://github.com/Facebook-Developer-Circle-San-Jose/accessibleRemoteBoard
+  description: ¿Has visto esas pizarras virtuales tan hermosas? Pero no son accesibles... Algo así pretende emular esta aplicación. El presentador del taller, curso o ponencia escribe, cambia entre pantallas, y mueve el foco de los usuarios conectados a los puntos de interés. De esta forma, los participantes saben en todo momento sobre qué temas está hablando el presentador. Actualmente es solo un prototipo, aún así a los usuarios les ha encantado. El objetivo es ser implementado en otras aplicaciones de presentaciones. Requiero más tiempo o colaboradores para lograr ese objetivo, que sin duda beneficiará aún más a las personas con discapacidad visual. Aunque no está en mantenimiento por ahora, lo pongo aquí para que este proyecto con tanto potencial no caiga en el olvido de mi parte.
+- name: cronos
+  link: https://davidacm.github.io/cronos/
+  description: ¡El tiempo vale oro! Pero a veces lo gastas y no sabes ni en qué... Mide tus actividades diarias con este temporizador, en el que podrás agregar tus actividades favoritas. Luego mira tu reporte diario, semanal o mensual, sobre las actividades en las que invertiste más tiempo y a cuales necesitas dedicarle más esfuerzo. O simplemente, Mmira el historial de actividades a modo de bitácora. Así fue como supe que poner este blog en marcha, me tomó 24 horas desde que comencé a estudiar Jekill y Liquid, la plataforma de comentarios... Nada mal, pero me mostró la cantidad de tiempo que invertimos en proyectos open source. Nació como una necesidad personal y por lo tanto puede que encuentres problemas de apariencia (el frontend no es mi fuerte) pero hay planes para mejorar e implementar más características a futuro. Por ahora solo necesitaba que cumpliera con mis requisitos indispensables. Aunque otras aplicaciones similares existen, eran tediosas, poco intuitivas o inaccesibles.
+- name: bcr Card Verifier
+  link: https://github.com/davidacm/bcrCardVerifier
+  description: Actualmente, proyecto con fines educativos. Se realizó este proyecto cuando un banco de mi país fue hackeado. Permitía, al introducir el hash de un número de tarjeta, identificar si la tarjeta estaba en la lista de tarjetas filtradas. Debido a que no hay envío del número directamente, el intercambio de información estaba garantizado. Tampoco se almacenaron números de tarjeta en la base de datos. Simplemente se tomó los CSV que pesaban más de 10gb, se procesaron en hashes, y se guardaron en la base de datos. Por dicha ya el suceso pasó, pero fue un proyecto interesante y a la vez corto de realizar.
+- name: TeleNVDA, control de escritorio remoto. Complemento para NVDA.
+  link: https://github.com/nvda-es/TeleNVDA
+  description: No soy el creador, soy colavorador directo de este proyecto, con el gran equipo de desarrollo de nvda.es. Surgió de la necesidad de implementar nuevas características sobre NVDARemote, ya que en este último no había mucha actividad ni soporte. Gracias a eso, hoy puedo decir que me siento orgulloso porque entre los usuarios de la comunidad hispana de NVDA, hemos mejorado por mucho, un complemento indispensable para todos los usuarios de NVDA. Si necesitas controlar una computadora de forma accesible, instala este complemento en NVDA, y en el NVDA de la computadora destino. ¡Sentirás como si estuvieras ahí!

@@ -1,0 +1,44 @@
+---
+layout: default
+title: publicaciones guardadas
+sitemap: false
+---
+<h1 class="post-list-heading" id="autofocusId" tabindex="-1">Publicaciones guardadas</h1>
+    <ul class="post-list" id="saved">
+    </ul>
+
+<script>
+function loadSavedPosts() {
+  const l = document.getElementById("saved")
+  if (Object.keys(savedPosts).length == 0) {
+    let i = l.appendChild(document.createElement('li'));
+    i.innerHTML = "<h2>No tienes publicaciones guardadas</h2>"
+  }
+  for (let k of Object.keys(savedPosts)) {
+    let i = l.appendChild(document.createElement('li'));
+    let tmp = savedPosts[k]
+    k = {url: k, title: tmp.title, description: tmp.description};
+
+    let desc = "";
+    let dataDesc = "";
+    if (k.description) {
+      desc = `<p>${k.description}</p>`
+      dataDesc = `data-description = "${k.description}"`
+    }
+    i.innerHTML = `
+    <h2>
+      <a class="post-link" href="${k.url}">
+        ${k.title}
+      </a>
+    </h2>
+    ${desc}
+    <button class="btn-save" aria-live="assertive"
+      data-title = "${k.title}"
+      data-url = "${k.url}"
+      ${dataDesc}
+      ></button>
+`;
+  }
+}
+loadSavedPosts();
+</script>

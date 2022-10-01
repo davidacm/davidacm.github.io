@@ -1,0 +1,23 @@
+<hr>
+<div class="post_navi">
+  <h2>Navegación</h2>
+  {%- if page.previous.url -%}
+  <a class="post_navi-item nav_prev" href="{{ page.previous.url }}">
+    <div class="post_navi-arrow" aria-hidden="true">&lt;</div>
+    <div class="post_navi-label">Anterior</div>
+    <div><span>{{ page.previous.title }}</span></div>
+  </a>
+  {%- else -%}
+  <a class="post_navi-item nav_prev" href="{{ 'archive.html' | absolute_url }}">
+    <div class="post_navi-label">Archivo del blog</div>
+    <div><span>Archivo de todos los posts del blog</span></div>
+  </a>
+  {%- endif -%}
+  {%- if page.next.url -%}
+  <a class="post_navi-item nav_next" href="{{ page.next.url }}">
+    <div class="post_navi-arrow" aria-hidden="true">&gt;</div>
+    <div class="post_navi-label">Siguiente</div>
+    <div><span>{{ page.next.title }}</span></div>
+  </a>
+  {%- endif -%}
+</div>

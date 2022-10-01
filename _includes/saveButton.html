@@ -1,0 +1,7 @@
+<button class="btn-save" aria-live="assertive"
+  data-title = "{{ include.post.title | escape }}"
+  data-url = "{{ include.post.url | absolute_url }}"
+{% if include.post.description %}
+data-description = "{{ include.post.description | escape }}"
+{% endif %}
+></button>

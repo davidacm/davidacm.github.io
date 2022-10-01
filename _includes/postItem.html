@@ -1,0 +1,12 @@
+<li>
+  <h{{ include.hLevel | default: 3 }}>
+    <a class="post-link" href="{{ include.post.url | relative_url }}">
+      {{ include.post.title | escape }} - 
+      <span class="post-meta">{{ include.post.date | date: date_format }}</span>
+    </a>
+  </h{{ include.hLevel | default: 3 }}>
+  {%- if include.post.description -%}
+    <p>{{ include.post.description | escape }}</p>
+  {%- endif -%}
+  {%- include saveButton.html post = post -%}
+</li>

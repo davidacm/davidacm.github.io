@@ -1,0 +1,85 @@
+lang: es
+paginate: 10
+title: Blog de David CM
+
+description: En este blog hablamos de tecnología, programación y desarrollo de software, electrónica, producción / ejecución musical entre otros. Podrás encontrar también temas sobre accesibilidad y autonomía para personas ciegas, incluso en los temas menos pensados como la impresión 3d
+url: https://davidacm.github.io
+show_excerpts: false
+timezone: Etc/UTC
+future: false
+
+#author:
+  #name: David CM
+  #email: to define
+
+minima:
+  skin: auto
+  #date_format: "%b %-d, %Y"
+
+  social_links:
+    twitter: davidacm100
+    github:  davidacm
+    facebook: thonycm
+    linkedin: davidacm
+    youtube_channel: UCd9hEWixz4lgGzgFoKOgLsg
+    youtube_channel_name: BliTecs
+    telegram: davidacm
+    # instagram: jekyll
+    # youtube: jekyll
+
+
+header_pages:
+  - pages/bookmarks.md
+  - pages/myprojects.md
+  - pages/help.md
+  - pages/savedPosts.html
+  - pages/archive.html
+
+# Build settings
+theme: minima
+
+rss: rss
+
+
+
+#twitter:
+#  username: toDo
+#  card: summary_large_image
+social:
+  name: David CM
+  links:
+#    - https://twitter.com/toDo
+    - https://linkedin.com/in/davidacm
+    - https://github.com/davidacm
+
+google_analytics:
+  - G-6BLK6VSRPK # New GA4 property
+
+# gravatar_hash: ToDo
+code_block_max_height: 500px
+home_post_limit: 5
+
+# comments_repo: ToDo
+
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+titles_from_headings:
+  strip_title: true
+  collections: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      categories:
+        - posts
+  

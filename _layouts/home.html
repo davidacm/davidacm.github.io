@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {%- if page.title -%}
+    <h1 class="page-heading"
+    {% if paginator.page < 2 %}
+      id="autofocusId" tabindex="-1"
+    {% endif %}
+  >{{ page.title }}</h1>
+{%- endif -%}
+
+  {{ content }}
+
+  {% if site.paginate %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
+  {%- if posts.size > 0 -%}
+    {%- if page.list_title -%}
+      <h2 class="post-list-heading"
+      {% if paginator.page > 1 %}
+        id="autofocusId" tabindex="-1"
+      {% endif %}
+      >{{ page.list_title }}</h2>
+    {%- endif -%}
+    <ul class="post-list">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- for post in posts -%}
+        {%- include postItem.html post = post -%}
+      {%- endfor -%}
+    </ul>
+
+    {% if site.paginate %}
+      <div class="pager">
+        <div class="pagination">
+        {%- if paginator.previous_page %}
+          <h2><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">Ver publicaciones más recientes</a></h2>
+        {%- endif %}
+          <p><div class="current-page">Página {{ paginator.page }}</div></p>
+        {%- if paginator.next_page %}
+          <h2><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">Ver más publicaciones</a></h2>
+        {%- endif %}
+        </div>
+      </div>
+    {%- endif %}
+
+  {%- endif -%}
+
+</div>
+<script>
+document.title = "Inicio | {{ site.title }}";
+</script>

@@ -1,0 +1,21 @@
+---
+layout: page
+title: Archivo del Blog (por fecha)
+---
+
+<a href="/archive.html">Ordenado por categorías</a>
+
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+
+{%- assign allposts = site.posts | sort_natural: "date" | reverse %}
+
+{%- assign postsByYearMonth = allposts | group_by_exp:"allposts", "allposts.date | date: '%Y %B'" %}
+
+{%- for yearMonth in postsByYearMonth %}
+  <h2>{{ yearMonth.name }}</h2>
+  <ul class="post-list" role="presentation">
+    {%- for post in yearMonth.items %}
+      {% include postItem.html post = post %}
+    {%- endfor %}
+  </ul>
+{%- endfor %}

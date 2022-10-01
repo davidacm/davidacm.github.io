@@ -1,0 +1,90 @@
+Programación:
+  - name: VS Code
+    description: accesibilidad oficial de VS Code. El mejor editor de programación, al menos para una persona ciega.
+    link: https://code.visualstudio.com/docs/editor/accessibility
+
+  - name: TIOBE Index (popularidad de lenguajes)
+    description: Recopilación y estadísticas de los lenguajes de programación más populares. ¡Te sorprendería saber en qué posiciones se encuentran algunos!
+    link: https://www.tiobe.com/tiobe-index/
+
+Audio:
+  - name: reaper
+    description: El mejor y más accesible DAW para una persona ciega. Edite desde sus podcasts hasta su música a nivel profesional
+    link: https://www.reaper.fm/
+
+  - name: osara
+    description: extensión para integrar accesibilidad en Reaper. Sin esto nada sería posible
+    link: https://osara.reaperaccessibility.com/
+
+  - name: wiki de Reaper acccesible
+    description: Reaper es mi editor de música principal (DAW) y aquí puedes encontrar muchas guías y consejos sobre accesibilidad en reaper
+    link: https://reaperaccessibility.com/index.php/Main_Page/es
+
+  - name: Canal de reaper accesible
+    description: Videos y podcasts que enseñan sobre reaper en profundidad, de forma accesible. ¡Contiene excelentes tutoriales!
+    link: https://www.youtube.com/channel/UCorZWoPotIziM9pCTzS-WPA
+
+  - name: Extensión SWS
+    description: un set de excelentes utilidades que harán de Reaper un mejor DAW. ¡No puede faltar!
+    link: https://www.sws-extension.org/
+
+  - name: reapack
+    description: Administrador de paquetes para reaper. Accede a miles de efectos, extensiones, scripts y demás, todo en un solo lugar
+    link: https://reapack.com/
+
+Accesibilidad:
+  - name: SAS® Disability Support
+    description: Esta es una herramienta para visualizar estructuras gráficas como mapas, gráficas, etc, de manera accesible usando la voz y referencias sonoras.
+    link: http://support.sas.com/accessibility/
+
+Utilidades para trabajo colaborativo:
+  - name: PasteBin
+    description: Portapapeles en línea, comparta texto con quien necesite sin complicaciones.
+    link: https://pastebin.com
+
+  - name: WebSequenceDiagrams
+    description: Crea diagramas de secuencia usando un lenguaje textual. Medianamente accesible.
+    link: https://www.websequencediagrams.com
+
+Redes:
+  - name: Speed test - CloudFlare
+    description: mide tu velocidad de internet / Pruebas de latencia
+    link: https://speed.cloudflare.com
+
+  - name: Speed test - SpeedTest.net
+    description: mide tu velocidad de internet / Pruebas de latencia
+    link: https://www.speedtest.net
+
+  - name: Speed test - Fast.com
+    description: mide tu velocidad de internet / Pruebas de latencia
+    link: https://fast.com
+
+  - name: MXToolbox SuperTool
+    description: Registro MX, DNS, lista negra y diagnóstico SMTP
+    link: https://mxtoolbox.com/SuperTool.aspx
+
+Referencias:
+  - name: HTTP Status Codes
+    description: Base de datos de códigos http, con sus definiciones y referencias útiles. Estándares, definición en algunos lenguajes de programación
+    link: https://httpstatuses.com
+
+otros:
+  - name: Base64 Guru
+    description: Codificador y decodificador Base64
+    link: https://base64.guru
+
+  - name: Donat Studios - CSV to Markdown table
+    description: Convertidor de CSV a una tabla Markdown
+    link: https://donatstudios.com/CsvToMarkdownTable
+
+  - name: One-Time Secret
+    description: comparte un mensaje secreto con alguien, con distintas opciones. Útil para compartir claves, ETC
+    link: https://onetimesecret.com
+
+  - name: WolframAlpha
+    description: Análisis matemático,, fórmulas, ecuaciones... Ya es medianamente accesible.
+    link: https://www.wolframalpha.com
+
+  - name: KeyCode.info
+    description: Visualizador de código de teclas pulsadas en javascript. Medianamente accesible.
+    link: https://keycode.info

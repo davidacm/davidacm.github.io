@@ -1,0 +1,6 @@
+﻿_site
+.devcontainer
+.vscode
+Gemfile
+Gemfile.lock
+*.code-workspace
