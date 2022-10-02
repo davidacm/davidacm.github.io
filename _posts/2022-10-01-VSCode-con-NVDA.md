@@ -208,6 +208,8 @@ Hay veces que me resulta más fácil ver los mensajes de la consola con el modo 
 
 Para abrir la consola de sistema en tu directorio actual, utiliza el comando "control + shift + c".
 
+Rara vez, NVDA pierde el foco y no detecta si se encuentra en un contenido web de VS Code. Entonces no podremos alternar entre foco y exploración. Generalmente basta con pulsar un tab y todo regresa a la normalidad. Pero en el peor de los casos, cambia de ventana (por ejemplo abriendo el menú inicio) y regresa a VS Code. No te tomará más de un segundo. No es algo que suceda seguido, pero lo comento para que lo tengas en cuenta y no te asustes si te llegara a suceder.
+
 ## Despedida.
 
 Esta es mi forma de usar VS Code. todo lo que he aprendido sobre VS Code lo he descubierto por cuenta propia y mucha investigación en internet. Puede que se me escapen detalles, hay cosas que no las recuerdas hasta que estás en un proyecto específico. Si sabes de consejos o trucos adicionales que podría agregar a esta publicación, házmelo saber. Estaría encantado de poder aprender más sobre la accesibilidad en VS Code, y poder transmitir el conocimiento a los usuarios.
