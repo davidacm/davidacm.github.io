@@ -168,8 +168,45 @@ Si quieres abrir un archivo rápidamente y conoces su nombre, puedes usar el com
 
 VS Code tiene varios editores de código, pero todos funcionan de manera similar. Probablemente no notarás la diferencia, se asocian al tipo de archivo que estés usando. Hay cosas básicas que la gran mayoría comparten. Además, puedes tener varios editores abiertos al mismo tiempo ¡Incluso para el mismo archivo!
 
+Puedes deshacer cambios con "control + z" y rehacerlos con "control + shift + z". Incluso si cierras el archivo y lo vuelves a abrir, tendrás disponible la pila de cambios realizados. El registro de cambios para cada archivo se perderá al reiniciar VS Code.
+
+Para guardar un archivo, simplemente pulsa "control + s"
+
+Puedes aumentar o reducir la sangría de todo un texto seleccionado pulsando tab o shift tab.
+
+### completado automático de caracteres.
+
+Al escribir texto, VS Code hará algunas cosas de manera automática por ti. Pueds que quieras eso o que no, personalmente yo lo dejo en automático. VS Code podría escribir automáticamente cosas como:
+
+* el cierre de un paréntesis, una llave, o un corchete que acabas de abrir.
+* Sangría automática cuando inicies un bloque de código. En python por ejemplo, si en la línea anterior existe un ":", VS Code iniciará con un nivel más de sangría. VS Code sabe que de no hacerlo, tendrás errores de sintaxis.
+* el cierre automático de los distintos tipos de comillas.
+
+A veces estas cosas nos llevan a cometer errores de sintaxis si no tenemos cuidado. Por ejemplo una comilla extra, un bloque con más de un símbolo de cierre, ETC. Me sucedía bastante al inicio. Pero cuando te acostumbras, te das cuenta que es más eficiente escribir código si el editor hace algunas cosas por ti.
+
+### Autocompletado de código.
+
+Por defecto, el autocompletado está activo en VS Code. Y suele ser muy bueno. Cada vez que escribas algo, VS Code te dará sugerencias que puedes aceptar o ignorar. Entre más letras escribas, menor será la cantidad de opciones disponibles. Puedes moverte con las flechas para seleccionar la opción que te interese, o puedes seguir escribiendo Normalmente.
+
+Algunas veces, cuando estás llamando a una función por ejemplo, VS Code te dará indicaciones sobre el uso de algún parámetro.
+
+El autocompletado es sensible al contexto en muchos lenguajes. Por ejemplo si en Java tienes una instancia llamada "miDocumento" y tulizas el operador de acceso ".", vs Code te dará sugerencias que pertenecen únicamente a esa instancia.
+
+Si importas un archivo en python, y configuraste tu entorno para que VS Code reconozca la carpeta de archivos importados, automáticamente se agregará lo necesario para que el autocompletado encuentre coincidencias también en los módulos importados.
+
+He de decir que en python, el autocompletado a veces no es tan inteligente. Debido a que python no es un lenguaje tipado, a veces el analizador no tiene forma de reconocer el contexto. Por eso yo te recomiendo que utilices la declaración de tipos de python, aunque no sea obligatoria. Ayudará a que VS Code pueda reconocer mucho mejor el contexto y por ende, un autocompletado más eficiente.
+
+En lenguajes como GO, C, typescript o Java, VS Code prácticamente te impide que introduzcas una referencia errónea. Nunca te mostrará sugerencias incompatibles para tu contexto actual. Créeme, en los lenguajes tipados si VS Code no te muestra sugerencias, es porque algo anda mal. Tal vez olvidaste importar el módulo, o tal vez olvidaste hacer pública la función o clase requerida.
+
+Si por alguna razón no te sale el autocompletado de manera automática, puedes abrirlo con "control + espacio".
+
+Algunas personas prefieren desactivar el autocompletado y abrirlo de forma manual, cuando lo pruebes podrás decidir que es lo mejor para ti. En mi caso yo prefiero que se abra automáticamente. Muchas veces no le pongo atención, como al momento de escribir este documento.
+
+### Listado de funciones importantes.
+
 Te mostraré un listado de las cosas que yo más utilizo.
 
+* Formatear el documento: "alt + shift + f". Te ayudará a que VS Code corrija cosas como la sangría, solo podrá hacerlo si VS Code encuentra un formateador disponible. Suele venir incorporado en la extensión que instales para trabajar con algún lenguaje.
 * Cambiar entre los distintos editores abiertos: "control + los números", del 1 al 8. Si no hay un archivo abierto en el slot correspondiente al número, te dirá "Group N (empty)". Por ejemplo "Group 2 (empty)"
 * Dividir el editor actual. "Control + la tecla a la izquierda del número 1". Te abrirá dos instancias del mismo archivo, es útil por ejemplo si quieres editar tu documento en alguna otra parte pero no quieres perder el foco de tu posición actual. En ese caso puedes dividir el archivo, moverte como quieras en la segunda instancia, y cerrar cuando termines. Los cambios se reflejarán en ambas partes. También es útil si deseas hacer alguna comparación, o por cualquier motivo por el que tengas que alternar constantemente entre dos secciones del mismo archivo. Puedes tener más de dos instancias del mismo archivo, si quieres. Aunque no debería ser necesario.
 * Ir al error anterior o siguiente: f8, shift f8.
@@ -178,21 +215,72 @@ Te mostraré un listado de las cosas que yo más utilizo.
 * Saltar a alguna sección de tu código. "Control + shift + o". Algo similar a lo anterior pero no verás un árbol, tendrás una lista de secciones y un cuadro de búsqueda para filtrar.
 * Alternar el modo Zen: "control + k, z". Esto es útil si queremos dejar solo la vista de código. A las personas videntes les gusta esto cuando estamos viendo algún código, así que nunca está demás. Para los que usamos lector de pantallas, no hay ninguna diferencia.
 
+### Listado de símbolos (secciones).
+
+Símbolos = secciones del documento, o al menos así lo vería yo. Listar los símbolos del documento es muy útil. Por ejemplo en este post que me encuentro escribiendo. El cual escribo mediante el formato "markdown". si pulso "control + shift + ."" me aparece en forma de árbol, la jerarquía de encabezados / títulos. Puedo navegar por los de nivel 1, y expandir los encabezados de nivel 2 pertenecientes a un encabezado superior específico. Luego bastaría con pulsar enter sobre el título que quiera, y el cursor se posicionará en la sección que yo le he indicado. Si escribiste de forma incorrecta la especificación para el encabezado, VS Code no lo detectará. Si eso pasa, es mejor que revises si algo está pasando con tu documento.
+
+Nota: VS Code tiene soporte nativo para archivos markdown. Útil para escribir las guías de NVDA, por ejemplo.
+
+También puedes usar el listado de símbolos para saltar a una sección específica. Recuerda el comando "control + shift + o". Verás las secciones en forma de lista, con un filtro para descartar secciones cuando el listado es muy extenso.
+
+## paleta de comandos.
+
+Esta es una característica tan importante, que se merece su propia sección.
+
+VS Code tiene algo muy útil llamado paleta de comandos. La abres con "control + shift + p". Funciona de manera similar al control de archivos recientes del explorador, pero esta es para los comandos de VS Code. Te aparecerán todos los comandos disponibles en VS Code, que son muchos. Gracias al poderoso filtrado, si recuerdas alguna clave sobre el comando que necesitas, podrás escribir algunas letras y ver si está entre los resultados. Para moverte por los resultados, lo haces con las flechas. Una vez que lo encuentres, pulsas enter y el comando será ejecutado. También te dirá la tecla rápida si la tiene, y si buscas con el navegador de objetos, verás una opción para asignar o reasignar una tecla rápida. Personalmente, es algo que utilizo con mucha frecuencia, para los comandos a los que no deseo asignar teclas rápidas. Si me encuentro con que uso un comando con mucha frecuencia, procedo a asignarle alguna tecla.
+
+## Extensiones de VS Code.
+
+Como he mencionado previamente, las extensiones son muy importantes en VS Code. Pero ¿Cómo instalarlas?
+
+Para hacerlo vamos a abrir la vista de extensiones. Pulsaremos "control + shift + x". El cursor se posicionará sobre un cuadro de búsqueda. Si damos tab, podremos ver dos categorías:
+
+* Installed Section  botón  expandido: extensiones instaladas.
+* Recommended Section  botón  expandido: extensiones recomendadas, si quieres las instalas o si quieres no. Yo tengo varias recomendaciones pero no instalo algo si no lo necesito.
+
+Por ejemplo si nos vamos a la sección de instaladas, y damos un tabulador más, veremos una lista de extensiones instaladas. Es importante que diga "Installed Section  botón  expandido", si estuviera contraída no se mostraría la lista de extensiones.
+
+Ahí podremos eliminar o deshabilitar extensiones, como si fueran los complementos de NVDA. Y al igual que en NVDA, yo recomiendo mantener el programa con la menor cantidad de extensiones posibles. Así nuestro entorno será más liviano.
+
+Si buscamos alguna extensión específica, podemos usar el buscador. Por Ejemplo, supongamos que necesitamos una para manejar archivos YAML.
+
+Nos posicionaremos sobre el cuadro de búsqueda (el primero que mencioné) y escribiremos "yaml", sin las comillas. Luego damos un tabulador. VS Code en este caso dirá lo siguiente:
+
+"YAML, 1.10.1, Publisher Red Hat, YAML Language Support by Red Hat, with built-in Kubernetes syntax support  1 de 327"
+
+Son muchas extensiones que funcionan para YAML. Yo me voy a quedar con esta primera que ya la he probado antes. así que pulsaré enter sobre ella.
+
+En este punto, conviene desactivar el modo foco para ver que hace la extensión. Lo desactivamos, y navegamos por medio de los encabezados. Nos saldrá mucha información, que puede indicarnos si la extensión cumple con nuestras espectativas o no. A veces es difícil determinarlo, en esos casos lo mejor es instalar y probar.
+
+Como ya hemos perdido el foco de la interfaz principal al navegar por el documento HTML, encontrar el botón para instalar se puede volver un poco tedioso en estos casos. Si activamos el modo foco para buscar el botón, tendremos que tabular muchas veces porque tendremos que pasar por los links del documento html también. Así que en estos casos yo recomiendo uno de los trucos más útiles en la navegación web: El buscador de NVDA.
+
+Pulsamos "NVDA + control + f". Luego, escribimos install y buscamos. Está en un widget de barra de herramientas, cuando lleguemos a él podemos activar el modo foco si quisiéramos, para navegar más fácilmente por los botones disponibles de la barra de herramientas.
+
+Por ahora solo pulsaremos el botón instalar. Se nos informará que la extensión se está instalando. Algunas extensiones requieren reiniciar VS Code, pero la gran mayoría no. Aunque por si las moscas, yo prefiero reiniciar el IDE.
+
+Exxisten muchas extensiones que no generan un cambio notable en la interfaz. Por ejemplo esta que acabo de buscar, sirve para que me ayude a manejar los archivos ".yaml" o ".yml". Me verificará errores, me ayudará a ver la jerarquía del archivo en forma de árbol (con "control + shift + ." como comenté previamente) y a saltar entre errores (con f8 y shift + f8) ETC.
+
+Otras nos darán sus propias vistas, por ejemplo las extensiones para administrar repositorios de github o administrar contenedores de Docker. El como abrir sus vistas, lo mejor será fijarse en la paleta de comandos para ver si tiene alguna tecla rápida, o simplemente abrir la extensión desde ahí. Otras además, nos agregarán funcionalidades para compilar el proyecto, configurarlo de acuerdo a sus especificaciones, ETC.
+
+Una extensión puede ser muchas cosas: un resaltador de sintaxis, un formateador / linter, una extensión para ayudarle a VS Code a comprender la estructura de un lenguaje...
+
+Si tienes alguna necesidad, busca en la tienda como lo acabamos de hacer, o busca en Google para ver que dice la gente. Ya que no todas las extensiones son buenas, algunas nos darán dolores de cabeza más bien. Es bueno escuchar feedback de otras personas, e incluso consejos de configuración de la extensión.
+
 ## Dev containers.
 
-Esto es una característica un poco avanzada. Pero que puede ser muy útil. Nos permite usar contenedores aislados de nuestro sistema, con las configuraciones exactas para un proyecto. El contenedor será el mismo independientemente de la máquina que utilices. Esto es gracias a la tecnología Docker, por lo que primero deberás instalar Docker en tu sistema. De esta forma, solo te descargas la imagen del entorno (VS code puede hacerlo automáticamente) y abres el proyecto en el contenedor. Todo quedará listo para ser usado, y no ensuciarás tu sistema con cosas que luego puede que no necesites.
+Esto es una característica un poco avanzada. Pero que puede ser muy útil. No viene integrada en VS Code, la instalaremos como extensión si lo necesitáramos. Nos permite usar contenedores aislados de nuestro sistema, con las configuraciones exactas para un proyecto. El contenedor será el mismo independientemente de la máquina que utilices. Esto es gracias a la tecnología Docker, por lo que primero deberás instalar Docker en tu sistema. De esta forma, solo te descargas la imagen del entorno (VS code puede hacerlo automáticamente) y abres el proyecto en el contenedor. Todo quedará listo para ser usado, y no ensuciarás tu sistema con cosas que luego puede que no necesites.
 
 Que si necesitas una versión de python distinta, o un proyecto que solo corre en Linux, o una herramienta que haría estragos en tu sistema. El caso más extremo y útil fue cuando tuve que utilizar Rust, instalar Rust en Windows es muy tedioso. Fácilmente lo resolví con un dev container.
 
-Para el testing local de este blog, habría tenido que instalar muchas cosas en mi sistema. Un dev container me ahorró muchas horas de configuración, que se convirtieron en algunos minutos de descarga de la imagen lista para darme todo lo que necesitaba.
+Para el testing local de este blog, habría tenido que instalar muchas cosas en mi sistema. Un dev container me ahorró muchas horas de configuración, que se convirtieron en algunos minutos de descarga de la imagen lista para darme todo lo que necesitaba, con casi 0 intervención de mi parte.
 
-Personalmente utilizo esta característica más que todo para proyectos web o de ESP32, pero no es algo que utilizaría para crear complementos para NVDA, por ejemplo.
+La forma tradicional habría sido instalar Ruby, instalar jekill y otros complementos, probablemente reiniciar windows... Y rezar para que las cosas no fallen. Ruby es un lenguaje que no utilizo, asíq que no tendría mucho sentido instalarlo si no lo voy a usar directamente.
+
+Personalmente utilizo esta característica más que todo para proyectos web o de ESP32, pero no es algo que utilizaría para crear complementos para NVDA, por ejemplo. No todo se puede trabajar con dev containers, pero un vistazo rápido a google nos puede dar tips para ver si es posible usar un dev container o no.
 
 Por eso te digo que es una característica que tal vez no necesites por ahora, pero que te podría ser útil en el futuro.
 
 ## Tips adicionales.
-
-VS Code tiene algo muy útil llamado paleta de comandos. La abres con "control + shift + p". Funciona de manera similar al control de archivos recientes del explorador, pero esta es para los comandos de VS Code. Te aparecerán todos los comandos disponibles en VS Code, que son muchos. Gracias al poderoso filtrado, si recuerdas alguna clave sobre el comando que necesitas, podrás escribir algunas letras y ver si está entre los resultados. Para moverte por los resultados, lo haces con las flechas. Una vez que lo encuentres, pulsas enter y el comando será ejecutado. También te dirá la tecla rápida si la tiene, y si buscas con el navegador de objetos, verás una opción para asignar o reasignar una tecla rápida. Personalmente, es algo que utilizo con mucha frecuencia, para los comandos que no deseo asignar teclas rápidas.
 
 En los editores, puedes saltar a cualquier parte del archivo y devolverte a la posición anterior con alt + flecha izquierda.
 
@@ -210,8 +298,12 @@ Para abrir la consola de sistema en tu directorio actual, utiliza el comando "co
 
 Rara vez, NVDA pierde el foco y no detecta si se encuentra en un contenido web de VS Code. Entonces no podremos alternar entre foco y exploración. Generalmente basta con pulsar un tab y todo regresa a la normalidad. Pero en el peor de los casos, cambia de ventana (por ejemplo abriendo el menú inicio) y regresa a VS Code. No te tomará más de un segundo. No es algo que suceda seguido, pero lo comento para que lo tengas en cuenta y no te asustes si te llegara a suceder.
 
+NVDA tiene un complemento para VS Code. Yo lo usé durante algún tiempo y tenía buena pinta. Por por alguna razón, causaba que NVDA se comportara lento con VS Code, así que he dejado de usarlo. Es útil, más no indispensable.
+
 ## Despedida.
 
 Esta es mi forma de usar VS Code. todo lo que he aprendido sobre VS Code lo he descubierto por cuenta propia y mucha investigación en internet. Puede que se me escapen detalles, hay cosas que no las recuerdas hasta que estás en un proyecto específico. Si sabes de consejos o trucos adicionales que podría agregar a esta publicación, házmelo saber. Estaría encantado de poder aprender más sobre la accesibilidad en VS Code, y poder transmitir el conocimiento a los usuarios.
 
-Actualizaré este post en cuanto tenga más información. Me dejo muchas cosas en el tintero. Como la administración de repositorios de git, o de issues de github, pero es que hablar de VS Code podría dar para todo un libro. Creo que con esto podrás comenzar, por ahora. Si tienes dudas, contáctame y puede que tus dudas terminen como respuestas en este post.
+Los desarolladores de VS Code se preocupan mucho por la accesibilidad. Si tienes algún problema de accesibilidad o alguna sugerencia que consideres podría hacer mejor tu experiencia en VS Code, ellos estarán encantados de escucharte. Si no, siempre puedes contactarme y yo les transmitiré el mensaje.
+
+Actualizaré este post en cuanto tenga más información. Me dejo muchas cosas en el tintero. Como la administración de repositorios de git, o de issues de github, pero es que hablar de VS Code podría dar para todo un libro con la inmensa cantidad de extensiones que existen. Creo que con esto podrás comenzar, por ahora. Si tienes dudas, contáctame y puede que tus dudas terminen como respuestas en este post.
