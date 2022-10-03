@@ -1,8 +1,8 @@
 ---
 layout: post
 description: "La accesibilidad digital es algo de lo que cada vez se habla más afortunadamente. Pero también es algo que casi nunca se implementa de la forma adecuada. ¿Qué implica la accesibilidad? ¿Cuales son las ventajas y desventajas de pensar en el desarrollo accesible? ¿Qué debemos evitar al implementar accesibilidad?"
-tags: programacion, desarrollo, informatica, accesibilidad
-category: programacion, accesibilidad
+tags: programacion desarrollo informatica accesibilidad
+categories: programacion accesibilidad
 ---
 # Accesibilidad digital: beneficios, ventajas, anti-patrones.
 

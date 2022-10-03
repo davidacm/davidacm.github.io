@@ -1,8 +1,8 @@
 ---
 layout: post
 description: "Elegir un par de audífonos inalámbricos es todo un reto. Te dejo mis recomendaciones después de haber probado una gran cantidad de auriculares."
-tags: audifonos, auriculares, audio, musica, accesibilidad
-category: productos, reviews
+tags: audifonos auriculares audio musica accesibilidad
+categories: productos reviews
 date: 2022-10-02 22:02:22 -0600
 ---
 # Recomendaciones sobre audífonos inalámbricos.

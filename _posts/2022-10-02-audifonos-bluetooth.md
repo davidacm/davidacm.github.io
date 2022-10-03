@@ -1,7 +1,7 @@
 ---
 layout: post
 description: "Cada vez es más frecuente el uso de audífonos inalámbricos, sobre todo los bluetooth. Sin embargo para los usuarios de lectores de pantalla, esto puede representar un dolor de cabeza si no se elige bien debido a la alta latencia que poseen la mayoría de audífonos inalámbricos en el mercado."
-tags: audifonos, auriculares, audio, musica, accesibilidad
+tags: audifonos auriculares audio musica accesibilidad
 category: productos
 date: 2022-10-02 20:02:24 -0600
 ---
