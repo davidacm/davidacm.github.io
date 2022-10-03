@@ -7,10 +7,18 @@ Programación:
     description: Encontrarás excelentes recursos para que inicies a desarrollar y contribuir con NVDA. No solo eso, si no que también encontrarás links a cursos de desarrollo en python de forma general.
     link: https://nvda.es/documentacion/desarrollo/
 
-
   - name: TIOBE Index (popularidad de lenguajes)
     description: Recopilación y estadísticas de los lenguajes de programación más populares. ¡Te sorprendería saber en qué posiciones se encuentran algunos!
     link: https://www.tiobe.com/tiobe-index/
+
+Accesibilidad:
+  - name: NVDA, lector de pantallas.
+    description: El mejor lector de pantallas a nivel mundial. Con soporte para poderosos complementos, es mi lector de pantallas principal.
+    link: https://www.nvaccess.org/download/
+
+  - name: SAS® Disability Support
+    description: Esta es una herramienta para visualizar estructuras gráficas como mapas, gráficas, etc, de manera accesible usando la voz y referencias sonoras.
+    link: http://support.sas.com/accessibility/
 
 Audio:
   - name: reaper
@@ -36,15 +44,6 @@ Audio:
   - name: reapack
     description: Administrador de paquetes para reaper. Accede a miles de efectos, extensiones, scripts y demás, todo en un solo lugar
     link: https://reapack.com/
-
-Accesibilidad:
-  - name: NVDA, lector de pantallas.
-    description: El mejor lector de pantallas a nivel mundial. Con soporte para poderosos complementos, es mi lector de pantallas principal.
-    link: https://www.nvaccess.org/download/
-
-  - name: SAS® Disability Support
-    description: Esta es una herramienta para visualizar estructuras gráficas como mapas, gráficas, etc, de manera accesible usando la voz y referencias sonoras.
-    link: http://support.sas.com/accessibility/
 
 Utilidades para trabajo colaborativo:
   - name: PasteBin
