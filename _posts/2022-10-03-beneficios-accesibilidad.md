@@ -8,11 +8,35 @@ categories: programacion accesibilidad
 
 Esta publicación representa la opinión personal del autor tras su experiencia en evaluación, implementación y consultorías de accesibilidad. Como humanos podemos cometer errores o tener ideas equivocadas sobre algún tema. Si detectas alguna inconsistencia o no estás de acuerdo con alguna de mis opiniones o recomendaciones, contáctame y tengamos una sana discusión al respecto. ¡Juntos, podríamos aprender más sobre accesibilidad! ☺
 
+## Índice.
+
+1. [¿Qué es accesibilidad?](#qué-es-accesibilidad)
+2. [Accesibilidad vs usabilidad ¿Cuál es la diferencia?](#accesibilidad-vs-usabilidad-cuál-es-la-diferencia)
+3. [Accesibilidad en las situaciones permanentes y temporales.](#accesibilidad-en-las-situaciones-permanentes-y-temporales)
+4. [Beneficios de la accesibilidad. ¿Por qué debería pensar en accesibilidad para mis proyectos?](#beneficios-de-la-accesibilidad-por-qué-debería-pensar-en-accesibilidad-para-mis-proyectos)
+    1. [Ejemplo concreto de beneficio en el SEO.](#ejemplo-concreto-de-beneficio-en-el-seo)
+5. [Factores que deberíamos evitar al implementar accesibilidad.](#factores-que-deberíamos-evitar-al-implementar-accesibilidad)
+    1. [No estar convencidos de los beneficios de la accesibilidad.](#no-estar-convencidos-de-los-beneficios-de-la-accesibilidad)
+    2. [Hacer suposiciones sobre lo que los usuarios finales necesitan.](#hacer-suposiciones-sobre-lo-que-los-usuarios-finales-necesitan)
+    3. [Escuchar, pero no responder.](#escuchar-pero-no-responder)
+    4. [Desconocer la forma de uso de tus herramientas de UI en accesibilidad.](#desconocer-la-forma-de-uso-de-tus-herramientas-de-ui-en-accesibilidad)
+    5. [Realizar una interfaz separada para determinado grupo de personas.](#realizar-una-interfaz-separada-para-determinado-grupo-de-personas)
+6. [¿En qué etapa de mi proyecto debo pensar en accesibilidad?](#en-qué-etapa-de-mi-proyecto-debo-pensar-en-accesibilidad)
+7. [Horrores de accesibilidad.](#horrores-de-accesibilidad)
+    1. [La Wai-Aria no es el santo grial.](#la-wai-aria-no-es-el-santo-grial)
+    2. [Ejemplos incorrectos usando Aria.](#ejemplos-incorrectos-usando-aria)
+    3. [Exceso de información por uso incorrecto de Aria.](#exceso-de-información-por-uso-incorrecto-de-aria)
+8. [¿Qué hay de la WCAG, es importante?](#qué-hay-de-la-wcag-es-importante)
+9. [¿Puedo usar tests y validadores automáticos de accesibilidad?](#puedo-usar-tests-y-validadores-automáticos-de-accesibilidad)
+10. [¿En qué momento debería acudir a tests y evaluaciones de accesibilidad manuales?](#en-qué-momento-debería-acudir-a-tests-y-evaluaciones-de-accesibilidad-manuales)
+11. [¿Qué hacer si mi aplicación no funciona bien con algunas herramientas de asistencia?](#qué-hacer-si-mi-aplicación-no-funciona-bien-con-algunas-herramientas-de-asistencia)
+12. [Conclusión.](#conclusión)
+
 ## ¿Qué es accesibilidad?
 
-En palabras simples, la accesibilidad es la característica que permite a cualquier persona acceder a todas las funcionalidades de un producto, servicio o infraestructura de forma autónoma. Es decir, sin requerir ninguna ayuda de terceros, excepto las herramientas de asistencia que la persona pueda estar utilizando. Casi en todo lugar donde haya usuarios involucrados, la accesibilidad puede ser aplicada.
+En palabras simples, la [accesibilidad](https://www.w3.org/standards/webdesign/accessibility) es la característica que permite a cualquier persona acceder a todas las funcionalidades de un producto, servicio o infraestructura de forma autónoma. Es decir, sin requerir ninguna ayuda de terceros, excepto las [herramientas de asistencia](https://espanol.nichd.nih.gov/salud/temas/rehabtech/informacion/tipos-dispositivos) que la persona pueda estar utilizando. Casi en todo lugar donde haya usuarios involucrados, la accesibilidad puede ser aplicada.
 
-Cuando algo no presenta accesibilidad, podemos decir que posee barreras que impiden a algún grupo de usuarios acceder o utilizar ese producto, servicio o lugar. Aunque aquí hablamos de accesibilidad digital, también podemos encontrar necesidades de accesibilidad en construcciones, centros de entretenimiento, vehículos e incluso productos para consumo personal.
+Cuando algo no presenta accesibilidad, podríamos decir que posee [barreras](https://equidox.co/blog/most-frustrating-digital-accessibility-issues-for-people-with-disabilities/) que impiden a algún grupo de usuarios acceder o utilizar ese producto, servicio o lugar. Aunque aquí hablamos de accesibilidad digital, también podemos encontrar necesidades de accesibilidad en construcciones, centros de entretenimiento, vehículos e incluso productos para consumo personal.
 
 Lamentablemente, la buena accesibilidad no se encuentra presente en prácticamente ningún servicio orientado al usuario final. En estos casos, las personas con discapacidad nos vemos en la necesidad de buscar alternativas o trucos para poder acceder a dichos servicios.
 
@@ -24,7 +48,7 @@ Como puedes ver, la accesibilidad es algo que engloba muchas áreas, aunque la m
 
 ## Accesibilidad vs usabilidad ¿Cuál es la diferencia?
 
-Accesibilidad y usabilidad, son términos que en mi opinión, van muy de la mano. Como hemos dado a la accesibilidad un enfoque hacia las PCD, no nos hemos dado cuenta que en realidad, la accesibilidad es parte de la usabilidad y que la accesibilidad puede mejorar la usabilidad de tu sistema. Le hemos dado a la accesibilidad un enfoque técnico mientras que a la usabilidad le hemos dado un enfoque más bien emocional.
+Accesibilidad y [usabilidad,](https://www.humanlevel.com/diccionario-marketing-online/usabilidad) son términos que en mi opinión, van muy de la mano. Como hemos dado a la accesibilidad un enfoque hacia las PCD, no nos hemos dado cuenta que en realidad, la accesibilidad es parte de la usabilidad y que la accesibilidad puede mejorar la usabilidad de tu sistema. Le hemos dado a la accesibilidad un enfoque técnico mientras que a la usabilidad le hemos dado un enfoque más bien emocional.
 
 Se podría decir que la accesibilidad es la característica que permite a una persona acceder a un servicio. La usabilidad, la calidad de la experiencia y la eficiencia al usar dicho servicio.
 
@@ -32,7 +56,9 @@ Pero no es tan simple como eso. Si tu servicio presenta problemas de accesibilid
 
 Por ejemplo, yo como desarrollador de software con discapacidad visual, podría desarrollar un sistema muy usable para personas ciegas y con una usabilidad terrible para las personas videntes. Ese hipotético sistema tendría problemas de accesibilidad para las personas videntes que podrían entorpecer y brindar una mala experiencia. Ese sistema podría ser quizás este blog, ya que ninguna persona vidente ha validado la experiencia final de usuario. Yo he tratado de implementar características de accesibilidad para todos de acuerdo a los estándares que conozco. Pero como no puedo ponerme al 100% en el papel de una persona vidente, probablemente se me escaparán muchos detalles. De ahí que la evaluación final de los usuarios de distintos grupos tenga una importancia vital en el control de calidad de los productos que desarrollamos, aunque tengamos expertos en accesibilidad en nuestro equipo de trabajo. Mejor aún, si podemos consultar a usuarios con distintas situaciones que tienen además las habilidades para transmitirnos en un lenguaje técnico, cómo podríamos mejorar la experiencia al usar nuestro sistema. Por ejemplo, yo podría consultar a cualquier persona vidente para que me brinde feedback sobre la apariencia visual de este blog. Pero si no es una persona con el conocimiento técnico para guiarme, quizás yo no pueda encontrar la forma de modificar mi sistema para que cumpla con sus expectativas o quizás ni siquiera sea capaz de entenderlas y termine generando una experiencia aún peor.
 
-Resumiendo, una buena accesibilidad debería mejorar la usabilidad de tu producto y es el primer beneficio que notarás. Apple por ejemplo, se preocupa por la accesibilidad y usabilidad en sus productos desde el inicio de su desarrollo. La experiencia final para todos (y no solo un determinado grupo) es esencial en sus políticas. No es de extrañar que les haya ido tan bien ¿Cierto? Ya que al final, son los usuarios los que optarán por usar nuestro producto si se sienten cómodos, o buscar alternativas si nuestro producto presenta dificultades de uso que generan situaciones incómodas que atenten contra nuestra paciencia.
+Resumiendo, una buena accesibilidad debería mejorar la usabilidad de tu producto y es el primer beneficio que notarás.
+
+[Apple](https://www.apple.com/accessibility/) por ejemplo, se preocupa por la accesibilidad y usabilidad en sus productos desde el inicio de su desarrollo. La experiencia final para todos (y no solo un determinado grupo) es esencial en sus políticas. No es de extrañar que les haya ido tan bien ¿Cierto? Ya que al final, son los usuarios los que optarán por usar nuestro producto si se sienten cómodos, o buscar alternativas si nuestro producto presenta dificultades de uso que generan situaciones incómodas que atenten contra nuestra paciencia.
 
 Sé que no he dejado claro la diferencia entre usabilidad y accesibilidad. Se debe a que la línea que separa estas áreas es muy delgada. En mi opinión, sin accesibilidad no existiría usabilidad. Ya que, para poder usar un servicio, primero debes ser capaz de accederlo (accesibilidad). Se podría decir que hemos tenido la accesibilidad en nuestras manos desde el inicio de los tiempos, solo que no la accesibilidad universal. Únicamente la hemos tenido para un determinado grupo de personas y no hemos sido conscientes de ello.
 
@@ -55,7 +81,9 @@ No usarán tu aplicación de la misma manera:
 
 Como habrás notado, todas estas situaciones son temporales, pero muy distintas entre sí. Puede que tu también te hayas encontrado en una situación temporal en la que usar una aplicación se te dificultaba porque la aplicación no estaba preparada para esa situación temporal que tuviste.
 
-Todas las personas tenemos necesidades de accesibilidad, y no siempre serán las mismas. Nuestras necesidades cambiarán a lo largo de nuestra vida, de nuestras situaciones, de nuestro entorno. Personalmente, cuando creo una aplicación, me gusta pensar en que yo pueda usarla para el resto de mi vida, incluso si mis situaciones permanentes o temporales cambian por alguna razón.
+Todas las personas tenemos necesidades de accesibilidad, y no siempre serán las mismas. Nuestras necesidades cambiarán a lo largo de nuestra vida, de nuestras situaciones, de nuestro entorno.
+
+Personalmente, cuando creo una aplicación, me gusta pensar en que yo pueda usarla para el resto de mi vida, incluso si mis situaciones permanentes o temporales cambian por alguna razón.
 
 Me atrevería a decir que no hemos pensado mucho en las situaciones temporales. Y hemos descartado en gran medida las situaciones permanentes porque pensamos que son un grupo minoritario, o que nunca nos tocará enfrentar situaciones similares. Creo que las situaciones permanentes son más conocidas por todos, aunque yo diría, más invisibilizadas.
 
@@ -67,11 +95,18 @@ No se trata de buscar el 100% de accesibilidad, se trata de reducir al máximo l
 
 Hay un beneficio escondido de la accesibilidad, del que poco se ha hablado. Hoy en día las computadoras también son usuarios. Pensemos, por ejemplo, en los buscadores web. Una computadora necesita que la información esté muy bien etiquetada, clasificada, ordenada y con jerarquías bien definidas. Un sistema que presente esas características, generalmente tendrá buena accesibilidad, sobre todo para los usuarios que utilizan herramientas de asistencia.
 
-En definitiva, una buena accesibilidad ayudará a tu posición en el SEO. A que no te lo esperabas ¿Verdad?
+En definitiva, una buena accesibilidad ayudará a tu posición en el [SEO.](https://rockcontent.com/es/blog/que-es-seo/) A que no te lo esperabas ¿Verdad?
 
-Hablemos de un caso concreto: si creas una tienda de productos, pon muchas descripciones y especificaciones de cada producto, no solo imágenes. Si lo haces, los buscadores podrán orientar mejor a los usuarios para llegar a tu tienda. Las imágenes serán atractivas para los usuarios que ya tienes, pero las descripciones detalladas ayudarán a que más público pueda encontrar tu tienda cuando las búsquedas coincidan con los productos que posee tu catálogo. Si bien es cierto que hoy en día es posible buscar mediante imágenes, eso funciona para productos concretos. La mayoría de personas no tienen en mente un producto concreto, si no más bien una necesidad. No, aquí no aplica lo de "una imagen habla más que mil palabras".
+### Ejemplo concreto de beneficio en el SEO.
 
-Una situación bastante incómoda es encontrarme con una tienda que tiene un producto que pareciera ser de mi interés, pero no puedo deducirlo a ciencia cierta porque su descripción no es lo suficientemente detallada. Especificaciones técnicas, marca, modelo, utilidad, usos, ingredientes, tamaño, peso, ETC. Al final no queda de otra que preguntar a la tienda, añadiendo carga al servicio al cliente y añadiendo un paso extra (y tedioso) para el usuario. No me sucede solo a mí, muchas personas videntes pasan por lo mismo. Habrías podido tener una mejor posición SEO y te habrías ahorrado el montón de consultas a tu servicio al cliente si desde el inicio hubieses puesto buenas descripciones para tus productos. Al final, puede que opte por ir a otra tienda donde pueda encontrar la información con facilidad.
+Cuando tu página o aplicación posee las cosas bien etiquetadas, clasificadas y semánticamente correctas, es más fácil para los indexadores de contenido resaltar tu contenido.
+Si creas una tienda de productos, pon muchas descripciones y especificaciones de cada producto, no solo imágenes. Si lo haces, los buscadores podrán orientar mejor a los usuarios para llegar a tu tienda. Las imágenes serán atractivas para los usuarios que ya tienes, pero las descripciones detalladas ayudarán a que más público pueda encontrar tu tienda cuando las búsquedas coincidan con los productos que posee tu catálogo.
+
+Si bien es cierto que hoy en día es posible buscar mediante imágenes, eso funciona para productos concretos. La mayoría de personas no tienen en mente un producto concreto, si no más bien una necesidad. No, aquí no aplica lo de "una imagen habla más que mil palabras".
+
+Una situación bastante incómoda es encontrarme con una tienda que tiene un producto que pareciera ser de mi interés, pero no puedo deducirlo a ciencia cierta porque su descripción no es lo suficientemente detallada. Especificaciones técnicas, marca, modelo, utilidad, usos, ingredientes, tamaño, peso, ETC. Al final no queda de otra que preguntar a la tienda, añadiendo carga al servicio al cliente y añadiendo un paso extra (y tedioso) para el usuario. No me sucede solo a mí, muchas personas videntes pasan por lo mismo.
+
+Habrías podido tener una mejor posición SEO y te habrías ahorrado el montón de consultas a tu servicio al cliente si desde el inicio hubieses puesto buenas descripciones para tus productos. Al final, puede que opte por ir a otra tienda donde pueda encontrar la información con facilidad.
 
 Si crees que el producto o servicio que ofreces no es lo suficientemente bueno o posee publicidad engañosa y por lo tanto evitas mostrar cierta información, lo mejor sería que lo eliminaras de tu catálogo. A corto o mediano plazo las personas lo notarán y tu tienda decaerá. La mala fama se transmite mucho más rápido que la buena, lamentablemente.
 
@@ -121,7 +156,7 @@ Actualmente, tenemos la tecnología necesaria para que una interfaz sea funciona
 
 Si optas por el enfoque de dos o más interfaces separadas, el mantenimiento del sistema será muy complejo. Probablemente olvidarás agregar las nuevas mejoras o funcionalidades a alguna de las interfaces, poniendo en desventaja a los usuarios de dicha interfaz. Con el tiempo te cansarás de mantener alguna de las interfaces, y los usuarios comenzarán a experimentar problemas.
 
-Este es un caso que lo podemos observar hoy en día en Facebook. Debido a la inaccesibilidad de la interfaz principal, muchas personas ciegas optaron por usar una versión básica de facebook. Actualmente, aunque la interfaz sigue estando activa, posee tantos problemas que resulta tediosa de usar. Facebook se cansó de darle soporte a dicha interfaz, pero no ha hecho los esfuerzos suficientes para mejorar la accesibilidad en su sistema principal.
+Este es un caso que lo podemos observar hoy en día en [Facebook.](https://www.facebook.com/) Debido a la inaccesibilidad de la interfaz principal, muchas personas ciegas optaron por usar una versión básica de facebook. Actualmente, aunque la interfaz sigue estando activa, posee tantos problemas que resulta tediosa de usar. Facebook se cansó de darle soporte a dicha interfaz, pero no ha hecho los esfuerzos suficientes para mejorar la accesibilidad en su sistema principal.
 
 ## ¿En qué etapa de mi proyecto debo pensar en accesibilidad?
 
@@ -129,7 +164,9 @@ Piensa en la accesibilidad lo antes posible. Cuanto más antes comiences a traba
 
 Veamos la situación de un edificio. Si lo construyes con accesibilidad desde el inicio, cuando el edificio esté terminado no requerirá modificaciones. Pero si primero lo construyes y después piensas en la accesibilidad, es muy probable que tengas que realizar cambios, romper paredes, remodelaciones, nuevas áreas... Los cambios serán por mucho, más costosos que si hubieses hecho las cosas bien desde el inicio. Incluso es probable que no puedas realizar buenas implementaciones de accesibilidad debido a los grandes cambios que requerirían.
 
-La accesibilidad no es difícil. Pero como toda habilidad, requiere su tiempo para dominarla. No es algo que puedas hacer bien tras una semana de entrenamiento. Al igual que fue difícil dominar la habilidad para microservicios, aplicaciones en la nube, distribuidas, dockerizadas, ETC. Piensa en la accesibilidad como una habilidad que tu equipo irá perfeccionando con el tiempo. Cada vez, obtendrás mejores resultados en la evaluación final de los usuarios. Al igual que cualquier otra habilidad técnica o de desarrollo, deberíamos ver la accesibilidad como una habilidad que debemos practicar. Cuando tu equipo domine dicha habilidad, representará un costo mínimo para tu empresa o proyecto.
+La accesibilidad no es difícil. Pero como toda habilidad, requiere su tiempo para dominarla. No es algo que puedas hacer bien tras una semana de entrenamiento. Al igual que fue difícil dominar la habilidad para microservicios, aplicaciones en la nube, distribuidas, dockerizadas, ETC. Piensa en la accesibilidad como una habilidad que tu equipo irá perfeccionando con el tiempo. Cada vez, obtendrás mejores resultados en la evaluación final de los usuarios.
+
+Al igual que cualquier otra habilidad técnica o de desarrollo, deberíamos ver la accesibilidad como una habilidad que debemos practicar. Cuando tu equipo domine dicha habilidad, representará un costo mínimo para tu empresa o proyecto.
 
 ## Horrores de accesibilidad.
 
@@ -152,7 +189,9 @@ Al revisar códigos de UI, he visto en muchas implementaciones cosas muy extrañ
 <button role="button" aria-label="botón para activar la opción aceptar">Aceptar</button>
 ```
 
-No sé si puedes verlo. Tenemos aquí información redundante e innecesaria. En el caso del botón, esa etiqueta tan específica más bien haría que la navegación por parte del usuario sea más lenta y tediosa por exceso de información. No lo digo para que te justifiques, pero errores como estos los he visto incluso en aplicaciones como Whatsapp.
+No sé si puedes verlo. Tenemos aquí información redundante e innecesaria. En el caso del botón, esa etiqueta tan específica más bien haría que la navegación por parte del usuario sea más lenta y tediosa por exceso de información.
+
+No lo digo para que te justifiques, pero errores como estos los he visto incluso en aplicaciones como [Whatsapp.](https://www.whatsapp.com/?lang=es)
 
 La redundancia no afectará a la accesibilidad, pero demuestra el desconocimiento por parte de los desarrolladores en el uso de las herramientas para implementar accesibilidad. En el caso de las etiquetas largas o información innecesaria, generalmente no será necesario si el flujo de la interfaz está correctamente diseñado. Podremos validar esto después con la evaluación de los usuarios finales.
 
@@ -169,7 +208,7 @@ Esto es html con sintaxis de [vue](https://vuejs.org/). En este caso tendría qu
 
 Supongamos que "maxLength" = 100. Lo que pasaría aquí es que cada vez que el usuario introduzca una letra, un lector de pantallas dirá:  "Caracteres restantes para el input: 100", "caracteres restantes para el input: 99"...
 
-Probablemente le causaríamos un dolor de cabeza a una persona ciega si le hacemos escribir un texto en un input de ese tipo, al tener que escuchar tanta información cada vez que escriba un carácter. Estos errores los he visto incluso en sitios poderosos como ebay, y aunque envié mis sugerencias para que pudieran corregirlo, mis recomendaciones nunca fueron escuchadas. Ya he dejado de enviarles recomendaciones de accesibilidad porque probablemente seré ignorado nuevamente.
+Probablemente le causaríamos un dolor de cabeza a una persona ciega si le hacemos escribir un texto en un input de ese tipo, al tener que escuchar tanta información cada vez que escriba un carácter. Estos errores los he visto incluso en sitios poderosos como [ebay,](https://www.ebay.com/) y aunque envié mis sugerencias para que pudieran corregirlo, mis recomendaciones nunca fueron escuchadas. Ya he dejado de enviarles recomendaciones de accesibilidad porque probablemente seré ignorado nuevamente.
 
 Hay sitios web donde han abusado tanto de aria-live y elementos similares, que la navegación es inviable por exceso de información.
 
@@ -191,7 +230,7 @@ Al igual que Aria, WCAG no es el santo grial ni nos dará solución a todos nues
 
 Podría hablar de los 4 principios de accesibilidad y sus respectivas pautas, pero hacerlo considero que sería repetir la información que ya puedes encontrar en muchas páginas y, sobre todo, en el sitio oficial de la WCAG.
 
-Existen otras especificaciones de accesibilidad proporcionadas por grandes como Microsoft, Google o apple. Y en la mayoría de frameworks de UI respetables podremos encontrar también recomendaciones para la correcta implementación de accesibilidad.
+Existen otras guías de accesibilidad proporcionadas por grandes como [Microsoft,](https://www.microsoft.com/en-us/accessibility/resources?activetab=pivot_1%3aprimaryr3) [Google](https://www.google.com/accessibility/) o [apple](https://developer.apple.com/accessibility/). Y en la mayoría de frameworks de UI respetables podremos encontrar también recomendaciones para la correcta implementación de accesibilidad.
 
 ## ¿Puedo usar tests y validadores automáticos de accesibilidad?
 
@@ -207,13 +246,15 @@ Un validador probablemente no te podrá decir si un flujo de la interfaz está m
 
 Si hiciste tu mejor esfuerzo, seguiste las recomendaciones y los estándares y aún así tu aplicación no funciona bien con algunos navegadores o lectores de pantalla por ejemplo, lo mejor que podrías hacer por el bien de toda la comunidad es reportar dichos errores con el desarrollador de esa herramienta de asistencia. Lamentablemente, muchas plataformas no están preocupadas por cumplir con el correcto uso de la información disponible a la que puede acceder una herramienta de asistencia.
 
-Me atrevo a mencionar un caso concreto. Google y su lector de pantallas Talkback, suele presentar inconsistencias al manejar ciertos tipos de elementos. Personalmente cuando me he visto en esa situación implemento una forma alternativa para lograr el mismo objetivo, al mismo tiempo que realizo el reporte correspondiente a la empresa. Google no suele ser de escuchar a los usuarios y las soluciones suelen tardar en llegar, pero es lo mejor que puedo hacer.
+Me atrevo a mencionar un caso concreto. Google y su lector de pantallas [Talkback,](https://support.google.com/accessibility/android/answer/6283677?hl=es-419) suele presentar inconsistencias al manejar ciertos tipos de elementos. Personalmente cuando me he visto en esa situación implemento una forma alternativa para lograr el mismo objetivo, al mismo tiempo que realizo el reporte correspondiente a la empresa. Google no suele ser de escuchar a los usuarios y las soluciones suelen tardar en llegar, pero es lo mejor que puedo hacer.
 
-En el caso de [NVDA](https://www.nvaccess.org/), que es a la fecha el lector más popular a nivel mundial, si realizas un reporte sobre algún inconveniente es muy probable que tu reporte sea tomado en cuenta y sea corregido para la siguiente versión. Somos muchos colaboradores en NVDA dispuestos a resolver cualquier problema que se presente de acuerdo a nuestro tiempo y capacidad, pero los desarrolladores oficiales también son muy activos en la resolución de problemas.
+En el caso de [NVDA](https://www.nvaccess.org/), que es a la fecha el lector más popular a nivel mundial, si realizas un reporte sobre algún inconveniente es muy probable que tu reporte sea tomado en cuenta y sea corregido para la siguiente versión.
+
+Somos muchos colaboradores en NVDA dispuestos a resolver cualquier problema que se presente de acuerdo a nuestro tiempo y capacidad, pero los desarrolladores oficiales también son muy activos en la resolución de problemas.
 
 [Accede al repositorio de NVDA en este link](https://github.com/nvaccess/nvda) y mira los issues presentes o abre un nuevo issue.
 
-En el caso de Narrator, el lector nativo de Windows, actualmente es tan básico que no muchas personas lo utilizan a tiempo concreto. Es más bien un salvavidas por si nuestro lector principal presentara alguna falla.
+En el caso de [Narrator,](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) el lector nativo de Windows, actualmente es tan básico que no muchas personas lo utilizan a tiempo concreto. Es más bien un salvavidas por si nuestro lector principal presentara alguna falla.
 
 ## Conclusión.
 

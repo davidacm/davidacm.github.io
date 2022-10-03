@@ -6,6 +6,26 @@ category: programacion
 ---
 # ¿Como usar el editor VS Code, con NVDA?
 
+VS Code es según mi opinión, el editor más accesible, usable e intuitivo para editar código e incluso escribir documentos. Su flujo de trabajo es muy rápido una vez que dominas el uso de su interfaz.
+
+## Índice.
+
+1. [Introducción.](#introducción)
+2. [Entrando en materia.](#entrando-en-materia)
+3. [Configuración del entorno de trabajo.](#configuración-del-entorno-de-trabajo)
+	1. [¿Qué hay de la carpeta .vscode?](#qué-hay-de-la-carpeta-vscode)
+4. [Explorando los archivos de tu proyecto.](#explorando-los-archivos-de-tu-proyecto)
+5. [Editando código.](#editando-código)
+	1. [completado automático de caracteres.](#completado-automático-de-caracteres)
+	2. [Autocompletado de código.](#autocompletado-de-código)
+	3. [Listado de funciones importantes.](#listado-de-funciones-importantes)
+	4. [Listado de símbolos (secciones).](#listado-de-símbolos-secciones)
+6. [paleta de comandos.](#paleta-de-comandos)
+7. [Extensiones de VS Code.](#extensiones-de-vs-code)
+8. [Dev containers.](#dev-containers)
+9. [Tips adicionales.](#tips-adicionales)
+10. [Despedida.](#despedida)---
+
 ## Introducción.
 
 Son muchas las personas que me han preguntado como usar este excelente editor de programación. Para mí, es el mejor a la fecha, y lo utilizo siempre que pueda. VS Code es un todo terreno que entra casi a cualquier parte. Personalmente y de las cosas que hago, el único campo en el que no he podido usar VS Code es al desarrollar aplicaciones móviles nativas para android. Me toca usar Android Studio, cosa que no me agrada mucho pero es lo que hay. Para todo lo demás: C, java, Python, Javascript, Typescript, web, Vue, React, Flutter, Go, y un largo ETC... VS Code funciona perfectamente.
