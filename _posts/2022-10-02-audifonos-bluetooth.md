@@ -135,3 +135,5 @@ Desde que trabajo con audífonos bluetooth, puedo andar por toda la casa junto c
 Una de las cosas que más me gusta es poder trabajar desde cualquier parte de la casa sin tener que mover la computadora, que aunque es pequeña su batería no dura mucho cuando se trata de realizar trabajos de CPU intensivo.
 
 Espero que este post te sea de utilidad. Si tienes dudas, sugerencias o comentarios no dudes en hacérmelos llegar.
+
+No olvides leer mi [Recomendación de audífonos,]({% post_url 2022-10-02-recomendacion-audifonos-bluetooth %}) donde comento sobre los mejores audífonos que he probado, los que sí han funcionado para mí.

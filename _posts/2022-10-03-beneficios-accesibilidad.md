@@ -234,7 +234,7 @@ Al igual que Aria, WCAG no es el santo grial ni nos dará solución a todos nues
 
 Podría hablar de los 4 principios de accesibilidad y sus respectivas pautas, pero hacerlo considero que sería repetir la información que ya puedes encontrar en muchas páginas y, sobre todo, en el sitio oficial de la WCAG.
 
-Existen otras guías de accesibilidad proporcionadas por grandes como [Microsoft,](https://www.microsoft.com/en-us/accessibility/resources?activetab=pivot_1%3aprimaryr3) [Google](https://www.google.com/accessibility/) o [apple](https://developer.apple.com/accessibility/). Y en la mayoría de frameworks de UI respetables podremos encontrar también recomendaciones para la correcta implementación de accesibilidad.
+Existen otras guías de accesibilidad proporcionadas por grandes como [Microsoft,](https://www.microsoft.com/en-us/accessibility/resources?activetab=pivot_1%3aprimaryr3) [Google](https://www.google.com/accessibility/) o [apple.](https://developer.apple.com/accessibility/) Y en la mayoría de frameworks de UI respetables podremos encontrar también recomendaciones para la correcta implementación de accesibilidad.
 
 ## ¿Puedo usar tests y validadores automáticos de accesibilidad?
 

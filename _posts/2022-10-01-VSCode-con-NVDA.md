@@ -20,11 +20,12 @@ VS Code es según mi opinión, el editor más accesible, usable e intuitivo para
 	2. [Autocompletado de código.](#autocompletado-de-código)
 	3. [Listado de funciones importantes.](#listado-de-funciones-importantes)
 	4. [Listado de símbolos (secciones).](#listado-de-símbolos-secciones)
-6. [paleta de comandos.](#paleta-de-comandos)
-7. [Extensiones de VS Code.](#extensiones-de-vs-code)
-8. [Dev containers.](#dev-containers)
-9. [Tips adicionales.](#tips-adicionales)
-10. [Despedida.](#despedida)---
+6. [Navegación de código.](#navegación-de-código)
+7. [paleta de comandos.](#paleta-de-comandos)
+8. [Extensiones de VS Code.](#extensiones-de-vs-code)
+9. [Dev containers.](#dev-containers)
+10. [Tips adicionales.](#tips-adicionales)
+11. [Despedida.](#despedida)
 
 ## Introducción.
 
@@ -184,6 +185,8 @@ Si usas el comando "control + shift + e" para abrir el explorador, el cursor por
 
 Si quieres abrir un archivo rápidamente y conoces su nombre, puedes usar el comando "control + p". Te mostrará un listado de archivos con un filtro para llegar justo al que necesitas. Es la forma más fácil de navegar entre archivos que ya conocemos.
 
+De forma alternativa, puedes pulsar "control + tab" y verás los archivos que has abierto de forma reciente. Mantén la tecla "control" pulsada hasta que decidas a cual archivo quieres ir. Esto es como cuando pulsas "alt + tab" para cambiar entre ventanas de Windows. Cuando trabajas en un proyecto, lo más probable es que estés saltando con frecuencia entre algunos archivos específicos, VS Code reconocerá esto y te los pondrá siempre a mano con "control + tab".
+
 ## Editando código.
 
 VS Code tiene varios editores de código, pero todos funcionan de manera similar. Probablemente no notarás la diferencia, se asocian al tipo de archivo que estés usando. Hay cosas básicas que la gran mayoría comparten. Además, puedes tener varios editores abiertos al mismo tiempo ¡Incluso para el mismo archivo!
@@ -193,6 +196,10 @@ Puedes deshacer cambios con "control + z" y rehacerlos con "control + shift + z"
 Para guardar un archivo, simplemente pulsa "control + s"
 
 Puedes aumentar o reducir la sangría de todo un texto seleccionado pulsando tab o shift tab.
+
+Una práctica muy usual es realizar saltos grandes entre líneas. El problema es recordar donde estábamos antes. Si realizas esto con frecuencia, puedes usar los comandos "alt + flecha izquierda" o "alt + flecha derecha" para saltar entre el historial de ubicaciones.
+
+Por ejemplo si estás en la línea 35 y te vas al inicio del archivo para ver las importaciones, una vez que hayas terminado de revisar podrías volver a la línea 35 con "alt + flecha izquierda". Estos comandos te llevarán por todas las posiciones en las que hayas estado en los archivos que tengas abiertos, es una especie de historial de posiciones del cursor.
 
 ### completado automático de caracteres.
 
@@ -208,9 +215,9 @@ A veces estas cosas nos llevan a cometer errores de sintaxis si no tenemos cuida
 
 Por defecto, el autocompletado está activo en VS Code. Y suele ser muy bueno. Cada vez que escribas algo, VS Code te dará sugerencias que puedes aceptar o ignorar. Entre más letras escribas, menor será la cantidad de opciones disponibles. Puedes moverte con las flechas para seleccionar la opción que te interese, o puedes seguir escribiendo Normalmente.
 
-Algunas veces, cuando estás llamando a una función por ejemplo, VS Code te dará indicaciones sobre el uso de algún parámetro.
+Algunas veces (cuando estás llamando a una función por ejemplo) VS Code te dará indicaciones sobre el uso de algún parámetro.
 
-El autocompletado es sensible al contexto en muchos lenguajes. Por ejemplo si en Java tienes una instancia llamada "miDocumento" y tulizas el operador de acceso ".", vs Code te dará sugerencias que pertenecen únicamente a esa instancia.
+El autocompletado es sensible al contexto en muchos lenguajes. Por ejemplo si en Java tienes una instancia llamada "miDocumento" y utilizas el operador de acceso ".", vs Code te dará sugerencias que pertenecen únicamente a esa instancia.
 
 Si importas un archivo en python, y configuraste tu entorno para que VS Code reconozca la carpeta de archivos importados, automáticamente se agregará lo necesario para que el autocompletado encuentre coincidencias también en los módulos importados.
 
@@ -233,6 +240,9 @@ Te mostraré un listado de las cosas que yo más utilizo.
 * buscar: "control + f". Remplazar: "control + h".
 * Mostrar los símbolos (secciones) de tu código: "control + shift + .". Esto es, un árbol con las funciones, clases, y en general, distintas secciones de tu código. Varía según el lenguaje utilizado, algunas extensiones no poseen soporte para dicha característica. Es muy útil cuando deseas reconocer la estructura de algún código, o si deseas saltar a una parte específica rápidamente.
 * Saltar a alguna sección de tu código. "Control + shift + o". Algo similar a lo anterior pero no verás un árbol, tendrás una lista de secciones y un cuadro de búsqueda para filtrar.
+* Saltar a la definición del símbolo: f12. Te llevará al sitio donde haya sido declarado el identificador actual. Podría llevarte a la definición del método que tengas en el cursor.
+* Mostrar referencias hacia el símbolo: "shift + f12". Te mostrará un listado de los lugares en el que se hace referencia al identificador que se encuentra bajo el cursor. Así podrás saber por ejemplo, en cuantas partes se está llamando ese método que tienes enfocado.
+* Renombrar un identificador: f2. Realizará las actualizaciones necesarias en cada parte donde el identificador haya sido utilizado. Así renombras fácilmente una variable o un método.
 * Alternar el modo Zen: "control + k, z". Esto es útil si queremos dejar solo la vista de código. A las personas videntes les gusta esto cuando estamos viendo algún código, así que nunca está demás. Para los que usamos lector de pantallas, no hay ninguna diferencia.
 
 ### Listado de símbolos (secciones).
@@ -242,6 +252,32 @@ Símbolos = secciones del documento, o al menos así lo vería yo. Listar los s�
 Nota: VS Code tiene soporte nativo para archivos markdown. Útil para escribir las guías de NVDA, por ejemplo.
 
 También puedes usar el listado de símbolos para saltar a una sección específica. Recuerda el comando "control + shift + o". Verás las secciones en forma de lista, con un filtro para descartar secciones cuando el listado es muy extenso.
+
+## Navegación de código.
+
+No solo escribir código es importante, también lo es el comprender el código de otros. VS Code nos brinda muchas herramientas para facilitarnos la tarea a la hora de navegar entre el código. Es importante eso sí, que hayamos instalado previamente las extensiones que brinden soporte al lenguaje que estemos usando, como python por ejemplo.
+
+Una de esas características ya la he comentado, la cual es el listado de símbolos. Se le conoce como breadcrumbs, traducido podría ser algo como "migas de pan", supongo. Creo que puedes ver la utilidad de esto. Si tienes un archivo con funciones, clases, propiedades y métodos, te permitirá ver la estructura como un árbol. Así podrás comprender fácilmente como se relacionan las cosas del código. Es como una tabla de contenidos pero orientada hacia cualquier archivo de código.
+
+Supongamos que tienes un archivo con dos clases y tres métodos cada una. Al activar esta función verás primero las clases, pero si abres cualquiera de ambos elementos verás los métodos que contiene dicha clase. Si decides que no hay nada que buscar ahí, puedes cerrar el elemento con flecha izquierda y entonces navegar a la otra clase para ver que contiene. La profundidad puede ser tan grande como el código. Por ejemplo si dentro de una de esas clases tuvieras la definición de una clase extra, verías otro elemento dentro de esa clase que puedes abrir. Si hay algo que te interese, basta con pulsar enter sobre el elemento y te llevará a la posición de dicho elemento.
+
+Como mencioné antes, esta característica me ayuda muchísimo en casi todas las situaciones. En este momento me encuentro actualizando la publicación. A veces requiero saltar a otras secciones del documento para corroborrar algo o realizar alguna modificación. Así que en este instante tengo abiertas dos instancias de esta publicación. En una realizo las modificaciones. En otra, con la ayuda de los breadcrumbs o listado de símbolos, navego por todo el documento comprobando, actualizando o eliminando información. Mantengo dos instancias porque así no pierdo el foco de la posición en la que estoy escribiendo. Me muevo por el documento con el listado de símbolos, porque es una manera ordenada y rápida de hacerlo.
+
+Aunque no estoy programando en este momento, puedes notar que VS Code me sigue siendo útil gracias a este tipo de utilidades que tenemos siempre a mano.
+
+Una utilidad pequeña pero poderosa es la opción para ir a la definición del símbolo. Si estás sobre un identificador y quieres saber de donde proviene o qué contiene, puedes pulsar f12. Si se trata de una variable, automáticamente te llevará a la definición de dicha variable. Si se trata de una función, puede que te llevue a la declaración de la función (lo más probable) o al alias de la función en caso de que hayas renombrado la función en algún punto. Si es el segundo caso, cuando caigas en el punto donde redefiniste el nombre de la función, puedes volver a saltar y entonces sí, caer sobre la declaración de la función.
+
+Si quieres ir directamente a la implementación, puedes pulsar control + f12. Te llevará directamente a la implementación sin tener que pasar por los alias que pudieran estar definidos. Generalmente, con f12 será más que suficiente.
+
+Esta utilidad es útil cuando nos hemos perdido en el flujo del código, o cuando queremos saber más sobre una función. Si la definición de la función no es parte de nuestro proyecto y VS Code conoce donde se encuentra el código, te abrirá una ventana de solo lectura en la que podrás ver la definición de la función aunque no sea parte de tu proyecto. Es útil cuando estás utilizando algún framework y te gustaría comprender mejor el código de lo que estás usando. Incluso en ese lugar de solo lectura, puedes continuar siguiendo el código saltando por las definiciones de los identificadores que vas encontrando.
+
+Puedes saltar a la llave de cierre o apertura del bloque actual de código con el comando "go to braket". "Control + shift + |" en caso que estés usando teclado con la distribución latina. Si no es tu caso, mira que sugerencia te da vs code. Te recomiendo actualizar el gesto para ejecutar este comando para que no te dé problemas al cambiar tu distribución de teclado.
+
+Una llave puede referirse a: paréntesis, corchetes, llaves, ETC.
+
+Para ir a un determinado número de línea, lo puedes hacer con "control + g". Si quieres, puedes especificar la columna también. Por ejemplo: "10:30" te llevará a la línea 10, columna 30.
+
+Para acceder a la lista de errores, pulsa "control + shift + m". Verás todos los errores que pueda tener tu proyecto. Aunque yo prefiero la opción de navegar con f8 y shift f8, pero solo me llevará por los errores de los archivos abiertos. Siempre corrijo los errores antes de cambiar a otro archivo.
 
 ## paleta de comandos.
 
@@ -302,9 +338,8 @@ Por eso te digo que es una característica que tal vez no necesites por ahora, p
 
 ## Tips adicionales.
 
-En los editores, puedes saltar a cualquier parte del archivo y devolverte a la posición anterior con alt + flecha izquierda.
 
-También en los editores, existe una manera muy simple de seleccionar texto. Puedes establecer un marcador de inicio que te permitirá revisar el texto con tranquilidad. Cuando encuentres el otro punto, podrás establecer el marcador de fin, seleccionando todo el texto entre ambas posiciones. Podrás cortar, copiar, borrar, lo que tu desees. ¿Quieres eliminar una clase entera? Esta es la forma más fácil y segura de hacerlo. ¿Quieres mover una función de lugar? Lo mismo... El único inconveniente es que los comandos asignados para esta característica son tediosos para mi gusto, así que te recomiendo reasignarlos a algo más sencillo.
+En los editores, existe una manera muy simple de seleccionar texto. Puedes establecer un marcador de inicio que te permitirá revisar el texto con tranquilidad. Cuando encuentres el otro punto, podrás establecer el marcador de fin, seleccionando todo el texto entre ambas posiciones. Podrás cortar, copiar, borrar, lo que tu desees. ¿Quieres eliminar una clase entera? Esta es la forma más fácil y segura de hacerlo. ¿Quieres mover una función de lugar? Lo mismo... El único inconveniente es que los comandos asignados para esta característica son tediosos para mi gusto, así que te recomiendo reasignarlos a algo más sencillo.
 
 Los comandos para usar dicha característica se llaman: "Set Selection Anchor", y "Select From Anchor to Cursor".
 
