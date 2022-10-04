@@ -1,11 +1,29 @@
 ---
 layout: post
-description: "Cada vez es más frecuente el uso de audífonos inalámbricos, sobre todo los bluetooth. Sin embargo para los usuarios de lectores de pantalla, esto puede representar un dolor de cabeza si no se elige bien debido a la alta latencia que poseen la mayoría de audífonos inalámbricos en el mercado."
+description: "Cada vez es más frecuente el uso de audífonos inalámbricos, sobre todo los bluetooth. Sin embargo para los usuarios de lectores de pantalla, esto puede representar un dolor de cabeza si no se elige bien debido a la alta latencia que poseen la mayoría de audífonos inalámbricos en el mercado. Sepa como elegir los tuyos sin morir en el intento"
 tags: audifonos auriculares audio musica accesibilidad
 category: productos
 date: 2022-10-02 20:02:24 -0600
 ---
-# Audífonos bluetooth: lo que debemos saber antes de adquirirlos.
+
+# Audífonos bluetooth: Todo lo que debemos saber antes de adquirirlos.
+
+De todos esos audífonos bluetooth que compraste, ninguno era apto para usar con lectores de pantalla. ¿Cierto? Presentaban mucha incomodidad. ¿Acaso no estamos preparados todavía para la conectividad inalámbrica de audio? ¿Será que sí existen audífonos de buena calidad, baja latencia y buen precio? Conozca qué factores debes tener en cuenta al adquirir audífonos bluetooth y como comprar los mejores para uso diario con lectores de pantalla.
+
+## Índice.
+
+1. [Introducción.](#introducción)
+2. [Explicación sobre el funcionamiento de comunicación de audio bluetooth.](#explicación-sobre-el-funcionamiento-de-comunicación-de-audio-bluetooth)
+   1. [Códecs de transmisión.](#códecs-de-transmisión)
+3. [Entonces ¿Cómo elegir mis audífonos?](#entonces-cómo-elegir-mis-audífonos)
+   1. [Modo baja latencia, o game mode.](#modo-baja-latencia-o-game-mode)
+   2. [Cancelación de ruido.](#cancelación-de-ruido)
+   3. [Calidad y comodidad.](#calidad-y-comodidad)
+4. [consejos útiles si tus audífonos poseen alta latencia.](#consejos-útiles-si-tus-audífonos-poseen-alta-latencia)
+5. [Con audífonos bluetooth mi lector no se escucha al inicio del habla ¿Qué hago?](#con-audífonos-bluetooth-mi-lector-no-se-escucha-al-inicio-del-habla-qué-hago)
+6. [Ventaja de usar audífonos inalámbricos.](#ventaja-de-usar-audífonos-inalámbricos)
+
+## Introducción.
 
 No solía ser partidario de los audífonos bluetooth debido a su latencia y calidad de audio, hasta que tuve la necesidad de usar unos a tiempo completo.
 

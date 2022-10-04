@@ -1,12 +1,16 @@
 ---
 layout: post
-description: "La accesibilidad digital es algo de lo que cada vez se habla más afortunadamente. Pero también es algo que casi nunca se implementa de la forma adecuada. ¿Qué implica la accesibilidad? ¿Cuales son las ventajas y desventajas de pensar en el desarrollo accesible? ¿Qué debemos evitar al implementar accesibilidad?"
+description: "Utilidades reales de la accesibilidad. La accesibilidad puede beneficiar a tu empresa de muchas maneras, la accesibilidad universal es más que empatía hacia las personas con discapacidad. Descubra los beneficios que puede recibir tu empresa, al realizar buenas implementaciones de accesibilidad. ¿Por qué vale la pena invertir en accesibilidad? ¿Qué debemos evitar al implementar accesibilidad? ¿Cual es la forma correcta de hacerlo?"
 tags: programacion desarrollo informatica accesibilidad
 categories: programacion accesibilidad
 ---
-# Accesibilidad digital: beneficios, ventajas, anti-patrones.
+# Accesibilidad digital y sus beneficios. ¿Qué utilidad tiene para tu proyecto? Formas correctas e incorrectas de implementar accesibilidad.
 
-Esta publicación representa la opinión personal del autor tras su experiencia en evaluación, implementación y consultorías de accesibilidad. Como humanos podemos cometer errores o tener ideas equivocadas sobre algún tema. Si detectas alguna inconsistencia o no estás de acuerdo con alguna de mis opiniones o recomendaciones, contáctame y tengamos una sana discusión al respecto. ¡Juntos, podríamos aprender más sobre accesibilidad! ☺
+"El desarrollo de interfaces era tan fácil cuando la accesibilidad no existía y así vivíamos bien. Pero ahora, muchas personas buscan convencerme que la accesibilidad es buena y no parece tener un beneficio real para mi proyecto. Pareciera que solo se trata de empatía hacia un grupo minoritario de personas. ¿Por qué accesibilidad? ¿Por qué invertir en ella? ¿Por qué gastar presupuesto para satisfacer a un pequeño grupo de la población? Mi empresa no vive de la empatía si no de los resultados."
+
+Seguramente ese pensamiento habrá sido el de muchos cuando han escuchado sobre accesibilidad. Aunque no lo creas, la accesibilidad ofrece muchos beneficios para tus proyectos y no es solo para brindar acceso a un pequeño grupo de personas.
+
+Descubramos juntos en este post, las utilidades y los beneficios reales de la accesibilidad. Hay muchos factores en juego que podrían beneficiar a tu empresa, la accesibilidad nos involucra a todos y no solo a las personas con discapacidad.
 
 ## Índice.
 
@@ -267,3 +271,5 @@ Si la persona encargada de accesibilidad carece de conocimiento en el desarrollo
 Según mi opinión, la forma más eficiente de implementar accesibilidad es cuando la persona encargada conoce tanto la parte teórica como la práctica en accesibilidad, y conoce la parte técnica de desarrollo de aplicaciones.
 
 Si tienes algún comentario, sugerencia o consulta, no dudes en contactarme. En el pie de página de este blog encontrarás un formulario para que puedas comunicarte conmigo. Estaré encantado de recibir tus aportes, sugerencias, recomendaciones, o en aclarar cualquier duda que tengas.
+
+Esta publicación representa la opinión personal del autor tras su experiencia en evaluación, implementación y consultorías de accesibilidad. Como humanos podemos cometer errores o tener ideas equivocadas sobre algún tema. Si detectas alguna inconsistencia o no estás de acuerdo con alguna de mis opiniones o recomendaciones, contáctame y tengamos una sana discusión al respecto. ¡Juntos, podríamos aprender más sobre accesibilidad! ☺
