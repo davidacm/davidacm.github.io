@@ -1,6 +1,6 @@
 ---
 layout: post
-description: "Utilidades reales de la accesibilidad. La accesibilidad puede beneficiar a tu empresa de muchas maneras, la accesibilidad universal es más que empatía hacia las personas con discapacidad. Descubra los beneficios que puede recibir tu empresa, al realizar buenas implementaciones de accesibilidad. ¿Por qué vale la pena invertir en accesibilidad? ¿Qué debemos evitar al implementar accesibilidad? ¿Cual es la forma correcta de hacerlo?"
+description: "¿Realmente es cara la accesibilidad? ¿Por qué invertir en accesibilidad? Descubra como la accesibilidad beneficia a tu empresa siendo esta un gran diferenciador. La accesibilidad universal es más que empatía hacia las personas con discapacidad. ¿Qué debemos evitar al implementar accesibilidad? ¿Cual es la forma correcta de hacerlo?"
 tags: programacion desarrollo informatica accesibilidad
 categories: programacion accesibilidad
 ---
@@ -18,18 +18,19 @@ Descubramos juntos en este post, las utilidades y los beneficios reales de la ac
 2. [Accesibilidad vs usabilidad ¿Cuál es la diferencia?](#accesibilidad-vs-usabilidad-cuál-es-la-diferencia)
 3. [Accesibilidad en las situaciones permanentes y temporales.](#accesibilidad-en-las-situaciones-permanentes-y-temporales)
 4. [Beneficios de la accesibilidad. ¿Por qué debería pensar en accesibilidad para mis proyectos?](#beneficios-de-la-accesibilidad-por-qué-debería-pensar-en-accesibilidad-para-mis-proyectos)
-    1. [Ejemplo concreto de beneficio en el SEO.](#ejemplo-concreto-de-beneficio-en-el-seo)
+   1. [Ejemplo concreto de beneficio en el SEO.](#ejemplo-concreto-de-beneficio-en-el-seo)
 5. [Factores que deberíamos evitar al implementar accesibilidad.](#factores-que-deberíamos-evitar-al-implementar-accesibilidad)
-    1. [No estar convencidos de los beneficios de la accesibilidad.](#no-estar-convencidos-de-los-beneficios-de-la-accesibilidad)
-    2. [Hacer suposiciones sobre lo que los usuarios finales necesitan.](#hacer-suposiciones-sobre-lo-que-los-usuarios-finales-necesitan)
-    3. [Escuchar, pero no responder.](#escuchar-pero-no-responder)
-    4. [Desconocer la forma de uso de tus herramientas de UI en accesibilidad.](#desconocer-la-forma-de-uso-de-tus-herramientas-de-ui-en-accesibilidad)
-    5. [Realizar una interfaz separada para determinado grupo de personas.](#realizar-una-interfaz-separada-para-determinado-grupo-de-personas)
+   1. [No estar convencidos de los beneficios de la accesibilidad.](#no-estar-convencidos-de-los-beneficios-de-la-accesibilidad)
+   2. [Hacer suposiciones sobre lo que los usuarios finales necesitan.](#hacer-suposiciones-sobre-lo-que-los-usuarios-finales-necesitan)
+   3. [Escuchar, pero no responder.](#escuchar-pero-no-responder)
+   4. [Desconocer la forma de uso de tus herramientas de UI en accesibilidad.](#desconocer-la-forma-de-uso-de-tus-herramientas-de-ui-en-accesibilidad)
+   5. [Realizar una interfaz separada para determinado grupo de personas.](#realizar-una-interfaz-separada-para-determinado-grupo-de-personas)
+   6. ["Exigir" a los usuarios usar determinadas herramientas de asistencia (sobre todo si son de pago).](#exigir-a-los-usuarios-usar-determinadas-herramientas-de-asistencia-sobre-todo-si-son-de-pago)
 6. [¿En qué etapa de mi proyecto debo pensar en accesibilidad?](#en-qué-etapa-de-mi-proyecto-debo-pensar-en-accesibilidad)
 7. [Horrores de accesibilidad.](#horrores-de-accesibilidad)
-    1. [La Wai-Aria no es el santo grial.](#la-wai-aria-no-es-el-santo-grial)
-    2. [Ejemplos incorrectos usando Aria.](#ejemplos-incorrectos-usando-aria)
-    3. [Exceso de información por uso incorrecto de Aria.](#exceso-de-información-por-uso-incorrecto-de-aria)
+   1. [La Wai-Aria no es el santo grial.](#la-wai-aria-no-es-el-santo-grial)
+      1. [Ejemplos incorrectos usando Aria.](#ejemplos-incorrectos-usando-aria)
+      2. [Exceso de información por uso incorrecto de Aria.](#exceso-de-información-por-uso-incorrecto-de-aria)
 8. [¿Qué hay de la WCAG, es importante?](#qué-hay-de-la-wcag-es-importante)
 9. [¿Puedo usar tests y validadores automáticos de accesibilidad?](#puedo-usar-tests-y-validadores-automáticos-de-accesibilidad)
 10. [¿En qué momento debería acudir a tests y evaluaciones de accesibilidad manuales?](#en-qué-momento-debería-acudir-a-tests-y-evaluaciones-de-accesibilidad-manuales)
@@ -161,6 +162,27 @@ Actualmente, tenemos la tecnología necesaria para que una interfaz sea funciona
 Si optas por el enfoque de dos o más interfaces separadas, el mantenimiento del sistema será muy complejo. Probablemente olvidarás agregar las nuevas mejoras o funcionalidades a alguna de las interfaces, poniendo en desventaja a los usuarios de dicha interfaz. Con el tiempo te cansarás de mantener alguna de las interfaces, y los usuarios comenzarán a experimentar problemas.
 
 Este es un caso que lo podemos observar hoy en día en [Facebook.](https://www.facebook.com/) Debido a la inaccesibilidad de la interfaz principal, muchas personas ciegas optaron por usar una versión básica de facebook. Actualmente, aunque la interfaz sigue estando activa, posee tantos problemas que resulta tediosa de usar. Facebook se cansó de darle soporte a dicha interfaz, pero no ha hecho los esfuerzos suficientes para mejorar la accesibilidad en su sistema principal.
+
+### "Exigir" a los usuarios usar determinadas herramientas de asistencia (sobre todo si son de pago).
+
+Debo decir que al momento de escribir este post, lamentablemente es una práctica muy común. Empresas que prueban sus aplicaciones con una determinada tecnología, casi siempre muy costosa, creyendo que es la tecnología más utilizada por los usuarios o quizás, persuadidos por los mismos dueños de dicha tecnología.
+
+En mi país (Costa Rica) algunas instituciones públicas han pedido a los usuarios usar JAWS (un lector de pantallas muy costoso) cuando los usuarios han reportado algún problema de accesibilidad.
+
+Si vas a pedir al usuario que utilice alguna tecnología para usar tu sistema (algo que no deberías) como mínimo asegúrate que dicha tecnología es:
+
+* Gratuita, así el usuario no deberá realizar una inversión extra para usar tu producto.
+* Eficiente, intuitiva, flexible, usable y cómoda. Así estarás recomendando una herramienta poderosa que ayudará al usuario a ser más productivo, y no una tecnología que más bien limita al usuario o que es tediosa de usar.
+
+Otra práctica bastante común en este área es creer que todas las herramientas de asistencia nativas de un sistema operativo, son funcionales. Al momento de escribir este post, la única compañía que ofrece un lector de pantallas 100% funcional y poderoso para los usuarios es Apple.
+
+Microsoft utiliza narrator, la peor implementación de un lector de pantallas. Todos los usuarios de Windows se ven forzados a instalar otro lector, usualmente NVDA.
+
+Le sigue google, con su lector de pantallas "Talkback". Es funcional (yo lo utilizo en mi teléfono principal) pero contiene muchos errores que harán fallar tu aplicación y no será tu culpa. Al implementar accesibilidad, yo mismo me he visto en la necesidad de implementar alternativas cuando algo no funciona como el estándar dice que debería funcionar. El equipo de la suite de accesibilidad de Google no suele escuchar a los usuarios, por lo que es difícil reportar un fallo y que este sea corregido.
+
+Si tu aplicación implementa correctamente los estándares de accesibilidad, debería ser compatible con todas las tecnologías de asistencia disponibles. Pero hay casos en los que es la tecnología de asistencia quien no implementa una buena práctica, y obliga a los desarrolladores a salirse del estándar para poder hacer compatibles sus aplicaciones.
+
+Si estás enfrentando esta situación, lee la sección [¿Qué hacer si mi aplicación no funciona bien con algunas herramientas de asistencia?](#qué-hacer-si-mi-aplicación-no-funciona-bien-con-algunas-herramientas-de-asistencia)
 
 ## ¿En qué etapa de mi proyecto debo pensar en accesibilidad?
 

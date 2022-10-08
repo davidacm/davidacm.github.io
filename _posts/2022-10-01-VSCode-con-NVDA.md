@@ -6,6 +6,12 @@ category: programacion
 ---
 # ¿Como usar el editor VS Code, con NVDA?
 
+
+<link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
+<script type="text/javascript"> hljs.highlightAll(); </script>
+
 VS Code es según mi opinión, el editor más accesible, usable e intuitivo para editar código e incluso escribir documentos. Su flujo de trabajo es muy rápido una vez que dominas el uso de su interfaz.
 
 ## Índice.
@@ -80,7 +86,7 @@ También puedes tener archivos ".code-workspace" a modo de plantilla, es lo que 
 
 Lo básico que incluyen mis plantillas es lo siguiente:
 
-```
+```json
 {
 	"folders": [
 		{
@@ -99,7 +105,7 @@ Hay muchos parámetros que puedes ajustar en ese archivo, pero incluso depende d
 
 Con el tiempo, te irás creando plantillas para los distintos tipos de proyectos. Por ejemplo una plantilla para python, otra para proyectos javascript, otra para Java... Lo harás conforme vayas realizando configuraciones de tu preferencia. Para darte una idea nada más, te mostraré el archivo de configuración que utilizo en el directorio de este blog. Nació de una plantilla que usaba para proyectos de React con ViteJS, así que hay algunas configuraciones innecesarias pero que no eliminé porque no afectaban de alguna manera.
 
-```
+```json
 {
 	"folders": [
 		{
@@ -144,7 +150,7 @@ Esta es una carpeta que puedes crear dentro de tu proyecto y que contiene tambi�
 
 Aquí puedes añadir aún más configuraciones, algunas solo se pueden configurar en esta carpeta. Por ejemplo, volviendo a mi entorno de trabajo para este blog, en mi carpeta ".vscode" se encuentra un archivo llamado "tasks.json" que me permite usar "dev containers", comentaré de eso después.
 
-```
+```json
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
