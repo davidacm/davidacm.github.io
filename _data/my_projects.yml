@@ -53,6 +53,9 @@
 - name: bcr Card Verifier
   link: https://github.com/davidacm/bcrCardVerifier
   description: Actualmente, proyecto con fines educativos. Se realizó este proyecto cuando un banco de mi país fue hackeado. Permitía, al introducir el hash de un número de tarjeta, identificar si la tarjeta estaba en la lista de tarjetas filtradas. Debido a que no hay envío del número directamente, el intercambio de información estaba garantizado. Tampoco se almacenaron números de tarjeta en la base de datos. Simplemente se tomó los CSV que pesaban más de 10gb, se procesaron en hashes, y se guardaron en la base de datos. Por dicha ya el suceso pasó, pero fue un proyecto interesante y a la vez corto de realizar.
+- name: Metrónomo
+  link: https://davidacm.github.io/vue-metronome-tutorial-result/metronome
+  description: Existen miles de metrónomos y este es uno más. Lo hice de forma rápida un día que quería medir el tempo de una canción y no tenía nada a mano para hacerlo, acababa de aprender Vue y quería poner mis conocimientos en práctica. así que su desarrollo ha sido rápido y quizás descuidado. Pero tal vez te sirva para medir el tempo de alguna canción. He creado un tutorial de Vue basándome en este diminuto proyecto.
 - name: TeleNVDA, control de escritorio remoto. Complemento para NVDA.
   link: https://github.com/nvda-es/TeleNVDA
   description: No soy el creador, soy colavorador directo de este proyecto, con el gran equipo de desarrollo de nvda.es. Surgió de la necesidad de implementar nuevas características sobre NVDARemote, ya que en este último no había mucha actividad ni soporte. Gracias a eso, hoy puedo decir que me siento orgulloso porque entre los usuarios de la comunidad hispana de NVDA, hemos mejorado por mucho, un complemento indispensable para todos los usuarios de NVDA. Si necesitas controlar una computadora de forma accesible, instala este complemento en NVDA, y en el NVDA de la computadora destino. ¡Sentirás como si estuvieras ahí!
