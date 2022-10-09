@@ -3,7 +3,7 @@ function addCopyButtons(clipboard) {
         var button = document.createElement('button');
         button.className = 'copy-code-button';
         button.type = 'button';
-        button.innerText = 'Copyar;
+        button.innerText = 'Copyar';
         button.addEventListener('click', function () {
             clipboard.writeText(codeBlock.innerText).then(function () {
                 button.blur();
