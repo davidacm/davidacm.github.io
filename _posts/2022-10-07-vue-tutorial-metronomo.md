@@ -31,10 +31,20 @@ Para este tutorial, es recomendable que sepas lo básico de [html](https://devel
    4. [Glosario de la aplicación.](#glosario-de-la-aplicación)
 7. [Ahora sí ¡A codear se ah dicho!](#ahora-sí-a-codear-se-ah-dicho)
    1. [Definición de constantes y funciones.](#definición-de-constantes-y-funciones)
-8. [Comenzando con Vue y nuestra aplicación.](#comenzando-con-vue-y-nuestra-aplicación)
-   1. [Definiendo el estado de la aplicación.](#definiendo-el-estado-de-la-aplicación)
-   2. [Propiedades computadas.](#propiedades-computadas)
-9. [Resultado final.](#resultado-final)
+   2. [Comenzando con Vue y nuestra aplicación.](#comenzando-con-vue-y-nuestra-aplicación)
+   3. [Definiendo el estado de la aplicación.](#definiendo-el-estado-de-la-aplicación)
+   4. [Propiedades computadas.](#propiedades-computadas)
+   5. [Métodos de la aplicación.](#métodos-de-la-aplicación)
+      1. [El método para estimar el bpm.](#el-método-para-estimar-el-bpm)
+   6. [Codeando los métodos.](#codeando-los-métodos)
+      1. [Redefiniendo el estado.](#redefiniendo-el-estado)
+      2. [Código de los métodos de la aplicación.](#código-de-los-métodos-de-la-aplicación)
+   7. [watchers en Vue.](#watchers-en-vue)
+      1. [remplazando el watcher con ayuda de una computed property.](#remplazando-el-watcher-con-ayuda-de-una-computed-property)
+   8. [Interfaz en Vue.](#interfaz-en-vue)
+      1. [¿Qué son Directivas?](#qué-son-directivas)
+      2. [Conectando la interfaz con la lógica de Vue.](#conectando-la-interfaz-con-la-lógica-de-vue)
+8. [Resultado final.](#resultado-final)
 
 ## Glosario.
 
@@ -256,7 +266,7 @@ Explicación: La función divide la duración de un minuto (en ms) sobre la cant
 
 Esto es todo lo que necesitamos de javascript, ahora sí podemos comenzar con vue.
 
-## Comenzando con Vue y nuestra aplicación.
+### Comenzando con Vue y nuestra aplicación.
 
 Para instanciar un componente vue, debemos instanciar su clase "Vue" a la cual le podemos pasar distintos atributos que veremos en las siguientes secciones.
 
