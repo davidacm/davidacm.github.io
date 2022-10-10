@@ -98,7 +98,11 @@ El principal motivo de una buena accesibilidad es que te permitirá llegar a muc
 
 No se trata de buscar el 100% de accesibilidad, se trata de reducir al máximo las barreras que puedan impedir a alguien usar tu aplicación. Se trata de escuchar a los usuarios finales, de añadir una opción para que los usuarios puedan contactarte y brindarte retroalimentación si encuentran inconvenientes. No creas que por haber probado tu aplicación ante un extenso equipo de QA, con distintos grupos de usuarios finales, tu aplicación estará libre de problemas de accesibilidad. Con la experiencia, irás aprendiendo a diseñar productos cada vez más accesibles y amigables con todos los usuarios.
 
-Hay un beneficio escondido de la accesibilidad, del que poco se ha hablado. Hoy en día las computadoras también son usuarios. Pensemos, por ejemplo, en los buscadores web. Una computadora necesita que la información esté muy bien etiquetada, clasificada, ordenada y con jerarquías bien definidas. Un sistema que presente esas características, generalmente tendrá buena accesibilidad, sobre todo para los usuarios que utilizan herramientas de asistencia.
+Hay un beneficio escondido de la accesibilidad, del que poco se ha hablado. Hoy en día las computadoras también son usuarios.
+
+Pensemos, por ejemplo, en los buscadores web. Una computadora necesita que la información esté muy bien etiquetada, clasificada, ordenada y con jerarquías bien definidas. Un sistema que presente esas características, generalmente tendrá buena accesibilidad, sobre todo para los usuarios que utilizan herramientas de asistencia.
+
+Incluso al describir las imágenes, o subtitular el contenido multimedia, además de ser buenas prácticas de accesibilidad, le estás brindando más información a los indexadores web.
 
 En definitiva, una buena accesibilidad ayudará a tu posición en el [SEO.](https://rockcontent.com/es/blog/que-es-seo/) A que no te lo esperabas ¿Verdad?
 
