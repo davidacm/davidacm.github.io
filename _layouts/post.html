@@ -25,6 +25,14 @@ layout: default
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
       {%- endif -%}</p>
+      <div class="expandable">
+        <button class="btnToggle">Compartir publicación</button>
+        <div class="elemsContainer">
+          <div class="share-links no-print">
+            {% include sharelinks.html excludeHeader="true" %}
+          </div>
+        </div>
+      </div>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

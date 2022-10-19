@@ -8,8 +8,9 @@ show_excerpts: false
 timezone: America/Costa_Rica
 future: false
 
-#author:
-  #name: David CM
+author:
+  name: David CM
+  url: https://www.linkedin.com/in/davidacm/
   #email: to define
 
 minima:
@@ -82,4 +83,3 @@ defaults:
     values:
       categories:
         - posts
-  

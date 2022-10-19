@@ -12,6 +12,7 @@ Seguramente ese pensamiento habrá sido el de muchos cuando han escuchado sobre 
 
 Descubramos juntos en este post, las utilidades y los beneficios reales de la accesibilidad. Hay muchos factores en juego que podrían beneficiar a tu empresa, la accesibilidad nos involucra a todos y no solo a las personas con discapacidad.
 
+
 ## Índice.
 
 1. [¿Qué es accesibilidad?](#qué-es-accesibilidad)
@@ -229,7 +230,8 @@ La redundancia no afectará a la accesibilidad, pero demuestra el desconocimient
 
 Veamos otro caso concreto de uso incorrecto de Aria.
 
-```
+{% raw %}
+```html
 <input type="text" v-model="field">
 <div aria-live="assertive">Caracteres restantes para el input: {{ maxLength - field.length }} </div>
 ```
@@ -246,9 +248,10 @@ Una forma elegante de resolver este problema sería enviar el anuncio de caracte
 
 Por ejemplo, de esta forma:
 
-```
+```html
 <div :aria-live="(maxLength -field.length) < 10?'assertive': 'off'">Caracteres restantes para el input: {{ maxLength - field.length }} </div>
 ````
+{% endraw %}
 
 Nuevamente es código de VUE. Lo que estoy indicando es que si la cantidad de caracteres restantes es menor a 10 active el aria-live, de lo contrario se mantenga en 'off'. No escribí esto en un ide con soporte para vue, ni he hecho pruebas, pero según mi teoría debería funcionar. Lo importante es la recomendación, ya que seguramente no estarás usando VUE como tu framework para UI.
 

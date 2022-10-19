@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://davidacm.github.io/sitemap.xml
+Disallow: /getlatest/*
