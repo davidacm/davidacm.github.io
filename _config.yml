@@ -30,6 +30,7 @@ minima:
 
 
 header_pages:
+  - pages/about-me.md
   - pages/bookmarks.md
   - pages/myprojects.md
   - pages/help.md

@@ -231,6 +231,85 @@ hr {
 }
 
 
+// --- Pagination
+// h2 elements are preserved so screen-reader users can still navigate by
+// heading. Visually they read as regular links.
+.pager {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-unit / 2;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  a {
+    display: inline-block;
+    padding: 10px 16px;
+    min-height: 44px;
+    border: 1px solid $border-color-01;
+    border-radius: 4px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $code-background-color;
+      text-decoration: none;
+    }
+  }
+
+  .previous-page::before { content: "← "; }
+  .next-page::after      { content: " →"; }
+
+  .current-page {
+    color: $brand-color;
+    font-size: 0.9375rem;
+  }
+}
+
+
+// --- Mobile menu button: 44x44 tap target (WCAG 2.5.5)
+.site-nav {
+  @media screen and (max-width: $on-medium - 1) {
+    label[for="nav-trigger"] {
+      width: 44px;
+      height: 44px;
+    }
+
+    .menu-icon {
+      width: 44px;
+      height: 44px;
+      padding-top: 0;
+      line-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > svg {
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+// --- Code blocks (highlight.js): align background with Minima's code-bg
+// in both light and dark, so the highlighted <code> doesn't show a
+// different rectangle inside the surrounding <pre>.
+code.hljs {
+  background: $code-background-color;
+}
+
+
 // --- Print
 @media print {
   .no-print { display: none !important; }

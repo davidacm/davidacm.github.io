@@ -41,7 +41,7 @@ layout: default
         {%- if paginator.previous_page %}
           <h2><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">Ver publicaciones más recientes</a></h2>
         {%- endif %}
-          <p><div class="current-page">Página {{ paginator.page }}</div></p>
+          <div class="current-page">Página {{ paginator.page }}</div>
         {%- if paginator.next_page %}
           <h2><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">Ver más publicaciones</a></h2>
         {%- endif %}
