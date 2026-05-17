@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Links de interés.
+nav_title: Enlaces
 description: Recopilación de Herramientas y recursos útiles para tecnología, música y accesibilidad.
 ---
 

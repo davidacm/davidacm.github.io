@@ -28,11 +28,23 @@
   border-radius: 2px;
 }
 
+// Suppress focus ring on elements that exist only to receive programmatic
+// focus (the autofocus-on-load heading). They're never reachable via Tab,
+// so the visual indicator on page load is noise.
+[tabindex="-1"]:focus,
+[tabindex="-1"]:focus-visible {
+  outline: none;
+}
+
 
 // --- Post title: scale down on small viewports so it doesn't dominate
 .post-title,
 .post-content h1 {
-  font-size: 2rem;
+  font-size: 1.625rem;
+
+  @media screen and (min-width: 400px) {
+    font-size: 2rem;
+  }
 
   @media screen and (min-width: $on-palm) {
     font-size: 2.375rem;
@@ -276,7 +288,7 @@ hr {
 }
 
 
-// --- Mobile menu button: 44x44 tap target (WCAG 2.5.5)
+// --- Mobile menu button: 44x44 tap target (WCAG 2.5.5), more visible icon
 .site-nav {
   @media screen and (max-width: $on-medium - 1) {
     label[for="nav-trigger"] {
@@ -294,10 +306,61 @@ hr {
       justify-content: center;
 
       > svg {
-        width: 20px;
+        width: 24px;
         height: auto;
+        display: block;
+
+        path {
+          // text-color contrast in dark mode (was border-color-03 = #999,
+          // sometimes hard to see; text-color is #bbb).
+          fill: $text-color;
+        }
       }
     }
+  }
+}
+
+// --- Top navigation (desktop): flexbox + wrap so items never split a single
+// label across two lines (was using display:inline + floats, which orphaned
+// the last word when the row overflowed).
+// Selector matches Minima's `.site-nav input ~ .trigger` specificity (0,2,1)
+// so our `display: flex` actually wins over the inherited `display: block`.
+@media screen and (min-width: $on-medium) {
+  .site-nav input ~ .trigger {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem 1.25rem;
+  }
+
+  .site-nav .page-link {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+}
+
+
+// --- "Guardar publicación" / "remover publicación" button.
+// Was inheriting browser default styling (cream/beige in dark mode).
+.btn-save {
+  background: transparent;
+  color: $link-base-color;
+  border: 1px solid $border-color-01;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+
+  &:hover {
+    background: $code-background-color;
+    border-color: $border-color-02;
   }
 }
 

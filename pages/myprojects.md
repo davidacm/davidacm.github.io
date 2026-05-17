@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Mis proyectos open source
+nav_title: Proyectos
 description: todos los proyectos open source que he creado y que se encuentren subidos en github
 ---
 
