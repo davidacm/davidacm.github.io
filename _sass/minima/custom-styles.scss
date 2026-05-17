@@ -1,2 +1,237 @@
-// Placeholder to allow defining custom styles that override everything else.
-// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+// ============================================================
+// Custom styles — extends the Minima theme.
+// Uses Minima Sass variables which resolve to CSS custom
+// properties (var(--minima-*)), so light/dark mode switches
+// automatically with the OS preference.
+// ============================================================
+
+
+// --- Site title: regular weight + normal spacing reads better at small sizes
+.site-title {
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+
+// --- Wrapper: don't get narrower on wider screens (Minima quirk fix)
+.wrapper {
+  @media screen and (min-width: $on-large) {
+    max-width: $content-width;
+  }
+}
+
+
+// --- Focus indicator: visible for everyone, important for low-vision users
+:focus-visible {
+  outline: 3px solid $link-base-color;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+
+// --- Post title: scale down on small viewports so it doesn't dominate
+.post-title,
+.post-content h1 {
+  font-size: 2rem;
+
+  @media screen and (min-width: $on-palm) {
+    font-size: 2.375rem;
+  }
+
+  @media screen and (min-width: $on-laptop) {
+    font-size: 2.625rem;
+  }
+}
+
+
+// --- Post list items: title on its own line, date small and muted below
+.post-list > li {
+  > h2, > h3 {
+    margin-bottom: 0.25em;
+  }
+
+  > .post-meta {
+    margin-top: 0;
+    margin-bottom: 0.75em;
+  }
+}
+
+
+// --- Horizontal rule: cleaner reset
+hr {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit * 0.66;
+  border: 0;
+  border-top: 1px solid $border-color-01;
+}
+
+
+// --- Previous / next navigation at the bottom of posts
+.post_navi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-unit / 2;
+  margin-bottom: $spacing-unit;
+
+  > h2 {
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
+
+  .post_navi-item {
+    flex: 1 1 16em;
+    min-width: 0;
+    padding: $spacing-unit / 2;
+    border: 1px solid $border-color-01;
+    border-radius: 4px;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $code-background-color;
+      text-decoration: none;
+    }
+  }
+
+  .post_navi-label {
+    font-size: 0.875em;
+    color: $brand-color;
+    margin-bottom: 0.25em;
+  }
+
+  .nav_next {
+    text-align: right;
+  }
+}
+
+
+// --- Copy code button (added by endScript.js to every <pre><code>)
+.copy-code-button {
+  color: $text-color;
+  background-color: $background-color;
+  border: 1px solid $border-color-01;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  display: block;
+  margin: 0 0 -1px auto;
+  padding: 4px 10px;
+  font-size: 0.85em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $code-background-color;
+  }
+
+  &:active {
+    background-color: $border-color-01;
+  }
+}
+
+.highlight pre {
+  margin: 0;
+}
+
+// Cap very long code blocks. 500px matches the previous value.
+.hljs {
+  max-height: 500px;
+}
+
+
+// --- Share section heading (replaces inline style="color: silver;")
+.share-heading {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: $brand-color;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit / 2;
+}
+
+
+// --- Social share buttons: flexbox, 44x44 touch targets, theme-aware fills
+#share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: $spacing-unit;
+
+  > div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    > svg {
+      width: 22px;
+      height: 22px;
+      fill: $brand-color;
+      transition: fill 0.15s ease-in-out;
+    }
+
+    &:hover {
+      background-color: $code-background-color;
+    }
+  }
+
+  > div.facebook:hover  > svg { fill: #3B5998; }
+  > div.twitter:hover   > svg { fill: #55ACEE; }
+  > div.linkedin:hover  > svg { fill: #0077b5; }
+  > div.mail:hover      > svg { fill: $text-color; }
+}
+
+
+// --- Expandable section ("Compartir publicación" etc.)
+.expandable {
+  background-color: $code-background-color;
+  color: $text-color;
+  border: 1px solid $border-color-01;
+  border-radius: 4px;
+  margin-bottom: $spacing-unit / 2;
+  overflow: hidden;
+}
+
+.btnToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 16px;
+  background: transparent;
+  color: inherit;
+  border: none;
+  font: inherit;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $border-color-01;
+  }
+
+  svg {
+    flex-shrink: 0;
+    height: 0.9em;
+    width: 0.9em;
+    margin-left: 0.5em;
+    fill: currentColor;
+  }
+}
+
+[aria-expanded="true"] .vert { display: none; }
+[aria-expanded] .hort        { fill: currentColor; }
+
+.elemsContainer {
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+// --- Print
+@media print {
+  .no-print { display: none !important; }
+}

@@ -3,13 +3,9 @@ layout: post
 description: "Tienes una idea en mente pero resulta tan difícil de implementar ¿cierto? Es una lástima que no hayan inventado algo para pasar rápidamente de las ideas a la acción. Yo he encontrado esa solución en VUE, veamos como VUE podría funcionar para ti."
 tags: programacion desarrollo informatica accesibilidad
 categories: programacion tutoriales
+code: true
 ---
 # Vue desde 0 en 30 minutos. Creando un metrónomo con todas las de la ley.
-
-<link rel="stylesheet"
-      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/default.min.css">
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
-<script type="text/javascript"> hljs.highlightAll(); </script>
 
 [Vue](https://vuejs.org/) es un framework para diseñar el frontend de aplicaciones web. El frontend es la parte gráfica de tu aplicación, y puede o no tener comunicación con el servidor (backend).
 

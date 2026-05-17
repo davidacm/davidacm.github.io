@@ -2,7 +2,13 @@
     <meta name="keywords" content="{{ page.keywords }}" />
 {% endif %}
 
-<link rel="stylesheet" href="/js/highlightjs/styles/github.css">
+{% if page.code %}
+    <link rel="stylesheet" media="(prefers-color-scheme: light)"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/github.min.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/github-dark.min.css">
+    <script defer src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
+    <script defer>document.addEventListener('DOMContentLoaded', function(){ hljs.highlightAll(); });</script>
+{% endif %}
 
-<link rel="stylesheet" type="text/css" href="/css/override.css">
 <script type="text/javascript" src="/js/startScript.js"></script>

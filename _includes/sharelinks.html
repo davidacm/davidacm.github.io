@@ -2,7 +2,7 @@
 {% assign safetitle = page.title | url_encode %}
 {% assign safetitlepre = "[Blog] " | append: page.author | append: " - " | url_encode %}
 {%- unless include.excludeHeader -%}
-  <h1 style="color: silver;">¿Te gustó? ¡Compártelo con tus amigos!</h1>
+  <h2 class="share-heading">¿Te gustó? ¡Compártelo con tus amigos!</h2>
 {%- endunless -%}
 <div id="share-buttons">
   <div class="facebook" title="Compartir en Facebook" role="button"

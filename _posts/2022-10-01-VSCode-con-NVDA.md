@@ -3,14 +3,10 @@ layout: post
 description: "VS Code es de los mejores editores para programar. Pero muchas personas evitan su uso porque lo consideran difícil. Les mostraré que es todo lo contrario"
 tags: programacion desarrollo informatica
 category: programacion
+code: true
 ---
 # ¿Como usar el editor VS Code, con NVDA?
 
-
-<link rel="stylesheet"
-      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/default.min.css">
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
-<script type="text/javascript"> hljs.highlightAll(); </script>
 
 VS Code es según mi opinión, el editor más accesible, usable e intuitivo para editar código e incluso escribir documentos. Su flujo de trabajo es muy rápido una vez que dominas el uso de su interfaz.
 
